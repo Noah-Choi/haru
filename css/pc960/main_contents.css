@@ -1,0 +1,694 @@
+/* 메인 배경 */
+body {
+    background-attachment: fixed;
+    background-image: url(../../img/main_con1.jpg);
+    background-size: 100%;
+    /* max-width: 1920px;
+    min-width: 960px;
+    max-height: 1280px;
+    min-height: 640px; */
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Main 폰트 */
+#MAI_content h1 { font-size: 40px; }
+#MAI_content h2 { font-size: 70px; margin-bottom: 50px;}
+#MAI_content h3 {
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#MAI_content h4 { font-size: 60px; }
+#MAI_content p { font-size: 25px; margin-bottom: 20px; }
+
+/* 모바일용 숨기기 */
+.haru_mobile {display: none;}
+
+/* 960 코드 */
+#MAI_content_wrap { margin: 0 auto; width: 100%; position: relative; }
+
+/* 오늘의 단어 */
+#MAI_TWD {
+    margin: 0 auto;
+    width: 960px;
+    height: 768px;
+    position: relative;
+}
+#MAI_TWD_wrap {    
+    position: absolute;
+    top: 50%;
+    margin-top:-150px;
+    left: 50%;
+    margin-left:-150px;
+    width: 300px; 
+    height: 300px; 
+}
+#MAI_TWD_wrap > li {
+    margin: 0 auto;
+    width: 300px; 
+    height: 300px; 
+}
+.TWD {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+#MAI_TWD_coin_front {
+    position: absolute;
+    background: #512B37;
+    backface-visibility: hidden;
+}
+#MAI_TWD_coin_back {
+    position: absolute;
+    background: #AF8672;
+    transform : rotateY(180deg); backface-visibility: hidden;
+}
+#MAI_TWD_wrap > li:hover .coin_flip {
+    transform: rotateY(180deg);
+}
+
+/* #MAI_TWD_wrap > li:hover #MAI_TWD_coin_back {
+    transform: rotateY(180deg);
+} */
+
+.coin_flip {
+    position:relative;
+    transform-style: preserve-3d;
+    transition : all .4s ease;
+    width: 300px;
+    height: 300px;
+}
+#MAI_TWD_coin_front_description {
+    width: 300px;
+    height: 300px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+#MAI_TWD_coin_back_description {
+    width: 300px;
+    height: 300px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+#MAI_TWD_wrap h4 {
+    text-align: center;
+    color: white;
+}
+
+#MAI_TWD_wrap p {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* 간단한 소개 */
+#MAI_content1 {
+    margin: 0 auto;    
+    position: relative;
+    background: black;
+    height: 640px;
+    width: 100%;    
+}
+#MAI_content1_inf {
+    position: absolute;
+    top: 50%;
+    margin-top:-140px;
+    left: 50%;
+    margin-left:-700px;
+    height: 280px;
+    width: 600px;
+    max-width:100%;
+    color: white;
+    opacity: 0;
+    text-align: center;
+}
+
+/* 회원가입 링크 */
+#MAI_content2 {
+    margin: 0 auto;
+    width: 100%; height: 800px;
+    position: relative;
+}
+#MAI_content2_inf {
+    position: absolute;
+    padding-top: 50px;
+    top: 50%;
+    margin-top:-210px;
+    left: 50%;
+    margin-left:-375px;
+    width: 750px;
+    height: 420px;
+    color: white;
+    background: black;
+    text-align: center;
+    opacity: 0.7;
+}
+#MAI_content2_inf:hover {    
+    background: #512B37;
+    opacity: 0.8;
+    transition-duration: 0.4s;
+}
+#MAI_content2_inf > h2 {
+    font-size: 60px;
+}
+#MAI_content2_inf > h1 > a {
+    color: white;
+}
+
+/* 패밀리사이트 */
+#MAI_familysite {
+    margin: 0 auto;
+    width: 100%; height: 600px;
+    position: relative;
+    background: url("../../img/fam_site.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#MAI_familysite_wrap {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    max-width: 768px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -384px;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#MAI_familysite_title {    
+    margin-bottom: 80px;
+    width: 750px;
+    text-align: center;
+    color: white;
+}
+#MAI_familysite_title h2 {
+    margin-top: 30px;
+    width: 768px;
+}
+#MAI_familysite_logo_wrap {    
+    position: relative;
+    width: 760px;
+    height: 300px;
+    margin: 0 auto;
+}
+#MAI_familysite_FO_wrap {    
+    position: relative;
+    width: 300px;
+    float: left;
+    margin-right: 50px;
+}
+#MAI_familysite_AM_wrap {    
+    position: relative;
+    float: left;
+    width: 330px;
+    margin-left: 50px;
+}
+.familysite_logo {
+    margin: 0 auto;
+    width: 271px;
+}
+#MAI_familysite img {
+    width: 300px;
+    margin: 0 auto;
+    vertical-align: center;
+}
+/* .familysite_description h3{
+    padding-left: 10px;
+} */
+
+/* 사이트 맵 */
+#MAI_sitemap {
+    width: 100%;
+    height: 200px;
+    background-color: #AF8672;
+}
+#MAI_sitemap_wrap {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    width: 820px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#smap1 { float: left; }
+#smap2 { float: left; }
+#smap3 { float: left; }
+#smap4 { float: left; }
+.smap_section { width: 200px;}
+.smap_section > ul > li {
+    margin-bottom: 15px;
+}
+.smap_section > ul > li > a {
+    color: white;
+}
+.smap_hd { color: white; font-size: 17px; font-weight: bold; }
+
+
+@media screen and (max-width: 767px) {
+    body {
+        background-attachment: fixed;
+        background-size: 100%;
+        background-image: url(../../img/main_con_m.jpg);
+    }
+    /* 모바일용 폰트 크기 */
+    #MAI_content h2 { font-size: 50px; }
+    /* 모바일용 숨기기 */
+    .haru_pc { display: none; }
+    .haru_mobile { display: block;}
+    
+    /* 360 코드 */
+    #MAI_content_wrap { margin: 0 auto; width: 100%; position: relative; }
+    
+    /* 오늘의 단어 */
+    #MAI_TWD_mobile {
+        margin: 0 auto;
+        width: 100%;
+        height: 600px;
+        position: relative;
+    }
+    #MAI_TWD_mobile_wrap {    
+        position: absolute;
+        top: 50%;
+        margin-top:-150px;
+        left: 50%;
+        margin-left:-150px;
+        width: 300px; 
+        height: 300px; 
+    }
+    #MAI_TWD_mobile_wrap > li {
+        margin: 0 auto;
+        width: 300px; 
+        height: 300px; 
+    }
+    #MAI_TWD_mobile_coin_front {
+        position: absolute;
+        background: #512B37;
+        backface-visibility: hidden;
+    }
+    #MAI_TWD_mobile_coin_back {
+        position: absolute;
+        background: #AF8672;
+        transform : rotateY(180deg); backface-visibility: hidden;
+    }
+    #MAI_TWD_mobile_wrap > li:active .coin_flip {
+        transform: rotateY(180deg);
+    }
+    #MAI_TWD_mobile_coin_front_description {
+        width: 300px;
+        height: 300px;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #MAI_TWD_mobile_coin_back_description {
+        width: 300px;
+        height: 300px;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    #MAI_TWD_mobile_wrap h4 {
+        text-align: center;
+        color: white;
+    }
+    
+    #MAI_TWD_mobile_wrap p {
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+    }
+    
+    /* 간단한 소개 */
+    #MAI_content1 {
+        height: 400px;
+    }
+    #MAI_content1_inf {
+        margin-top: -100px;
+        top: 50%;
+        margin-left: -180px; 
+        left:50%;
+        height: 200px;
+        width: 360px;
+        color: white;
+        opacity: 1;
+        text-align: center;
+    }
+    #MAI_content1_inf h2 {
+        /* margin: 0 auto; */
+        font-size: 50px;
+        width: 360px;
+        text-align: center;
+    }
+    #MAI_content1_inf p {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 17px; 
+    }
+
+    /* 회원가입 링크 */
+    #MAI_content2_mobile {
+        margin: 0 auto;
+        width: 100%; height: 600px;
+        position: relative;
+    }
+    #MAI_content2_mobile_inf {
+        position: absolute;
+        top: 50%;
+        margin-top:-300px;
+        left: 50%;
+        margin-left:-180px;
+        width: 360px;
+        height: 600px;
+        color: white;
+        background: black;
+        text-align: center;
+        opacity: 0.7;
+    }
+    #MAI_content2_inf:hover {
+        background: #512B37;
+        opacity: 0.8;
+        transition-duration: 0.4s;
+    }
+    #MAI_content2_mobile_inf > h2 {
+        margin-top: 40px;        
+    }
+    #MAI_content2_mobile_inf > h1 > a {
+        color: white;
+        font-size: 30px;
+    }
+    
+    /* 패밀리사이트 */
+    #MAI_familysite {
+        margin: 0 auto;
+        width: 100%; height: 800px;
+        position: relative;
+    }
+    
+    #MAI_familysite_wrap {
+        position: unset;
+        overflow: hidden;
+        width: 100%;
+        height: 800px;
+        margin: 0;
+        margin: 0 auto;
+    }
+    #MAI_familysite_title {
+        margin-bottom: 0px;
+        width: 360px;
+        text-align: center;
+        margin: 40px auto;
+    }
+    #MAI_familysite_title h2 {
+        width: 360px;
+    }
+    #MAI_familysite_logo_wrap {
+        width: 300px;
+        height: 800px;
+        margin: 0 auto;
+    }
+    #MAI_familysite_FO_wrap {
+        width: 300px;
+        float: left;
+        margin-right: 0px;
+    }
+    #MAI_familysite_AM_wrap {
+        float: left;
+        width: 300px;
+        margin-left: 0px;
+        margin: 0 auto;
+    }
+    .familysite_logo {
+        margin: 0 auto;
+        width: 300px;
+    }
+    #MAI_familysite img {
+        width: 300px;
+        margin: 0 auto;
+    }
+    /* .familysite_description h3{
+        padding-left: 10px;
+    } */
+    
+    /* 사이트 맵 */
+    #MAI_sitemap {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #MAI_sitemap_wrap {
+        text-align: center;
+        padding-top: 30px;
+        width: 320px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #smap1 { float: left; }
+    #smap2 { float: left; }
+    #smap3 { float: left; }
+    #smap4 { float: left; }
+    .smap_section { width: 80px;}
+    .smap_section > ul > li {
+        margin-bottom: 15px;
+    }
+    .smap_section > ul > li > a {
+        font-size: 12px;
+    }
+    .smap_hd { font-size: 13px; }
+}
+
+@media screen and (min-width:768px) and (max-width:959px) {
+    /* Main 폰트 */
+    #haru_header_bottom { width: 100%; }
+    #MAI_content h1 { font-size: 40px; }
+    #MAI_content h2 { font-size: 70px; margin-bottom: 50px;}
+    #MAI_content h3 {
+        font-weight: 100;
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    #MAI_content h4 { font-size: 60px; }
+    #MAI_content p { font-size: 25px; margin-bottom: 20px; }
+
+    /* 모바일용 숨기기 */
+    .haru_mobile { display: none;}
+
+    /* 960 코드 */
+    #MAI_content_wrap { margin: 0 auto; width: 100%; position: relative; }
+
+    /* 오늘의 단어 */
+    #MAI_TWD {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #MAI_TWD_wrap {    
+        position: absolute;
+        top: 50%;
+        margin-top:-150px;
+        left: 50%;
+        margin-left:-150px;
+        width: 300px; 
+        height: 300px; 
+    }
+    #MAI_TWD_wrap > li {
+        margin: 0 auto;
+        width: 300px; 
+        height: 300px; 
+    }
+    .TWD {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    #MAI_TWD_coin_front {
+        position: absolute;
+        background: #512B37;
+        backface-visibility: hidden;
+    }
+    #MAI_TWD_coin_back {
+        position: absolute;
+        background: #AF8672;
+        transform : rotateY(180deg); backface-visibility: hidden;
+    }
+    #MAI_TWD_wrap > li:hover .coin_flip {
+        transform: rotateY(180deg);
+    }
+    .coin_flip {
+        position:relative;
+        transform-style: preserve-3d;
+        transition : all .4s ease;
+        width: 300px;
+        height: 300px;
+    }
+    #MAI_TWD_coin_front_description {
+        width: 300px;
+        height: 300px;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #MAI_TWD_coin_back_description {
+        width: 300px;
+        height: 300px;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    #MAI_TWD_wrap h4 {
+        text-align: center;
+        color: white;
+    }
+
+    #MAI_TWD_wrap p {
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+    }
+
+    /* 간단한 소개 */
+    #MAI_content1 {
+        margin: 0 auto;    
+        position: relative;
+        background: black;
+        height: 640px;
+        width: 100%;    
+    }
+    #MAI_content1_inf {
+        position: absolute;
+        top: 50%;
+        margin-top:-140px;
+        left: 50%;
+        margin-left:-700px;
+        height: 280px;
+        width: 600px;
+        max-width: 100%;
+        color: white;
+        opacity: 0;
+        text-align: center;
+    }
+
+    /* 회원가입 링크 */
+    #MAI_content2 {
+        margin: 0 auto;
+        width: 100%; height: 800px;
+        position: relative;
+    }
+    #MAI_content2_inf {
+        position: absolute;
+        padding-top: 50px;
+        top: 50%;
+        margin-top:-210px;
+        left: 50%;
+        margin-left:-375px;
+        width: 750px;
+        height: 420px;
+        color: white;
+        background: black;
+        text-align: center;
+        opacity: 0.7;
+    }
+    #MAI_content2_inf:hover {    
+        background: #512B37;
+        opacity: 0.8;
+        transition-duration: 0.4s;
+    }
+    #MAI_content2_inf > h2 {
+        font-size: 60px;
+    }
+    #MAI_content2_inf > h1 > a {
+        color: white;
+    }
+
+    /* 패밀리사이트 */
+    /* #MAI_familysite {
+        margin: 0 auto;
+        width: 100%; height: 600px;
+        position: relative;
+    }
+
+    #MAI_familysite_wrap {
+        position: absolute;
+        overflow: hidden;
+        margin-top: -200px;
+        top: 50%;
+        width: 750px;
+        margin-left: -375px;
+        left: 50%;
+        height: 400px;
+    }
+    #MAI_familysite_title {        
+        margin: 0 auto;
+        margin-bottom: 80px;
+        width: 750px;
+        text-align: center;
+    }
+    #MAI_familysite_logo_wrap {    
+        position: relative;
+        width: 660px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    #MAI_familysite_FO_wrap {    
+        position: relative;
+        width: 280px;
+        float: left;
+        margin-right: 50px;
+    }
+    #MAI_familysite_AM_wrap {    
+        position: relative;
+        float: left;
+        width: 280px;
+        margin-left: 50px;
+    }
+    .familysite_logo {
+        margin: 0 auto;
+    }
+    #MAI_familysite img {
+        width: 250px;
+        margin: 0 auto;
+    } */
+    /* .familysite_description h3{
+        padding-left: 10px;
+    } */
+
+    /* 사이트 맵 */
+    #MAI_sitemap {
+        width: 100%;
+        height: 200px;
+        background-color: #AF8672;
+    }
+    #MAI_sitemap_wrap {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 30px;
+        width: 560px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    #smap1 { float: left; }
+    #smap2 { float: left; }
+    #smap3 { float: left; }
+    #smap4 { float: left; }
+    .smap_section { width: 140px;}
+    .smap_section > ul > li {
+        margin-bottom: 15px;
+    }
+    .smap_section > ul > li > a {
+        color: white;
+    }
+    .smap_hd { color: white; font-size: 17px; font-weight: bold; }
+
+}

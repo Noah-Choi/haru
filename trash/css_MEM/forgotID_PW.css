@@ -1,0 +1,87 @@
+body{
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* forgotID */
+#forgotID{
+  float: left;
+  width: 50%;
+}
+#forgotID>div{
+  height: 90px;
+  /* border: 1px solid black; */
+}
+#forgotID>div>h3{
+  font-size: 18px;
+  margin-left: 50px;
+  width: 70px;
+  display: inline-block;
+  /* border: 1px solid black; */
+  margin-top: 20px
+}
+#forgotID>div>div{
+  vertical-align: middle;
+  display: inline-block;
+  /* border: 1px solid black; */
+  margin-top: 20px
+}
+#forgotID input{
+  height: 35px;
+  width: 220px;
+}
+#forgotID p{
+  margin: 5px;
+  display: block;
+  color: #555;
+}
+.Btn{
+  clear: both;
+  text-align: center;
+}
+.Btn button{
+  width: 80px; height: 40px;
+  margin: 20px;
+  
+}
+/* forgotPW */
+#forgotPW{
+  float: left;
+  width: 50%;
+}
+#forgotPW>div{
+  height: 90px;
+  /* border: 1px solid black; */
+}
+#forgotPW>div>h3{
+  font-size: 18px;
+  margin-left: 50px;
+  width: 70px;
+  display: inline-block;
+  /* border: 1px solid black; */
+  margin-top: 20px
+}
+#forgotPW>div>div{
+  vertical-align: middle;
+  display: inline-block;
+  /* border: 1px solid black; */
+  margin-top: 20px
+}
+#forgotPW input{
+  height: 35px;
+  width: 220px;
+}
+#forgotPW p{
+  margin: 5px;
+  display: block;
+  color: #555;
+}
+/* bottom button */
+#bottomBtn{
+  clear: both;
+  text-align: center;
+}
+#bottomBtn button{
+  width: 160px; height: 40px;
+  margin: 20px;
+}

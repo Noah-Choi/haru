@@ -1,0 +1,22 @@
+<span class="close" onclick="closeModal()">&times;</span>
+<h1 id="modalHeader">로그인</h1>
+<div id="userID">
+    <input type="text" placeholder="아이디" class="inputBox" onfocusout="inputCheck(this.id)" id="userIDInput">
+    <p></p>
+</div>
+<div id="userPW">
+    <input type="text" placeholder="비밀번호" class="inputBox" onfocusout="inputCheck(this.id)" id="userPWInput">
+    <p></p>
+</div>
+<p><a href="#"style="color:darkblue"class="redirectModal"id="forgotIDBtn2">아이디 찾기</a> · <a href="#"style="color:darkblue"class="redirectModal"id="forgotPWBtn2">비밀번호 찾기</a></p>
+<button class=confirmBtn onclick="textInputCheck()">로그인</button>
+<br><hr><br>
+<p>하루 단어 아이디가 없으신가요?<a href="#" style="color:darkblue"class="redirectModal"id="termsBtn2">회원가입</a></p>
+<script>
+    //redirect modal
+    $(".redirectModal").click(function(){
+        var idName=$(this).attr("id");
+        idName=idName.substring(0,idName.length-1);
+        $("#"+idName+"0").click();
+    });
+</script>

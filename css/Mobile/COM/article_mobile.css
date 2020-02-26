@@ -1,0 +1,23 @@
+
+@media screen and (max-width:540px){
+    .article{
+        min-height: 600px;
+    }
+    
+}
+
+@media screen and (min-width: 541px) and (max-width: 767px) {
+
+    .article{
+        min-height: 600px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    .article{
+        min-height: 600px;
+    }
+    #aside_com{
+        height:82px;
+    }
+}

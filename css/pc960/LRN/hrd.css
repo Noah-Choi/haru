@@ -1,0 +1,413 @@
+.hrd {
+    background: #E8D7CA;
+}
+
+/* 기능 부분 */
+#LRN_HRD_wrap {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 750px;
+    height: 250px;
+    position: relative;
+    clear: both;
+    cursor: pointer;
+    -ms-user-select: none; 
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+#LRN_HRD_card {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    float: left;
+}
+#LRN_HRD_card1 {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    background-image: url("../../../img/card1.png");
+    background-repeat: no-repeat;
+    background-size: 400px 250px;
+}
+#LRN_HRD_card2 {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    background-image: url("../../../img/card2.png");
+    background-repeat: no-repeat;
+    background-size: 400px 250px;
+}
+#LRN_HRD_card3 {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    background-image: url("../../../img/card3.jpg");
+    background-repeat: no-repeat;
+    background-size: 400px 250px;
+}
+#LRN_HRD_card h2 {
+    text-align: center;    
+    line-height: 250px;
+}
+.card_active { z-index: 1; }
+#LRN_HRD_next {
+    text-align: center;    
+    line-height: 125px;
+    width: 175px;
+    height: 125px;
+    background: #5E968B;
+    float: left;
+}
+#LRN_HRD_dknow {
+    text-align: center;    
+    line-height: 125px;
+    width: 350px;
+    height: 125px;
+    background: #A74E36;
+    float: left;
+}
+#LRN_HRD_mynote {
+    text-align: center;    
+    line-height: 85px;
+    width: 175px;
+    height: 85px;
+    background: #C8A25B;
+    float: left;
+}
+#LRN_HRD_timer {
+    width: 175px;
+    height: 40px;
+    background: #5D405A;
+    float: left;
+}
+#HRD_timer_visible {
+    width: 175px;   
+    text-align: center;    
+    line-height: 40px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-family: 'Poor Story',sans-serif;
+    font-weight: bold;
+}
+#HRD_timer {
+    position: absolute;
+    text-align: center;
+    cursor: default;   
+    line-height: 40px;
+    width: 175px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Poor Story',sans-serif;
+    font-weight: bold;
+}
+/* 글씨 가운데 정렬 */
+.HRD_button {
+    font-size: 40px;
+    color: white;
+    font-family: 'Poor Story',sans-serif;
+    font-weight: bold;
+}
+
+.HRD_button:hover {
+    opacity: 0.5;
+    transition-duration: 0.4s;
+}
+
+.HRD_button_small {
+    font-size: 25px;
+    color: white;
+    font-family: 'Poor Story',sans-serif;
+    font-weight: bold;
+}
+
+.HRD_button_small:hover {
+    opacity: 0.5;
+    transition-duration: 0.4s;
+}
+
+/* 모르는 단어 리스트 */
+#LRN_HRD_dknow_List {
+    margin-bottom: 80px;
+}
+#LRN_HRD_dknow_title {
+    height: 55px;
+    width: 400px;
+    position:relative;
+    clear: both;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+#LRN_HRD_dknow_title h1 {
+    font-family: 'Poor Story',sans-serif;
+    font-weight: bold;
+    height: 55px;
+    width: 300px;
+    line-height: 55px;
+    float: left;
+    margin-right: 40px;
+}
+#LRN_HRD_dknow_UD {
+    width: 55px;
+    float: left;
+}
+#LRN_HRD_dknow_table_wrap {
+    width: 752px;
+    height: 100%;
+    margin-bottom: 50px;
+    margin: 0 auto;
+}
+#LRN_HRD_dknow_title:hover {
+    opacity: 0.5
+}
+#LRN_HRD_dknow_table {    
+    width: 750px;
+    border: 1px solid black;
+}
+#LRN_HRD_dknow_table th {
+    height: 30px;
+    background: #AF8672;
+    color: white;   
+}
+#LRN_HRD_dknow_table td {
+    height: 30px;
+    text-align: center;
+}
+#LRN_HRD_dknowlist {
+    background: #FFF8E1;
+    margin-bottom: 100px;
+}
+.table_counter {
+    width: 70px;
+}
+.table_kanji {
+    width: 160px;
+}
+.table_yomigana {
+    width: 170px;
+}
+.table_korean {
+    width: 160px;
+}
+.table_delete {
+    width: 40px;
+}
+.delete_tr {        
+    cursor: default;
+}
+
+#LRN_HRD_dknowlist td:last-child:hover {
+    background-color: red;
+    color: white;
+}
+#LRN_HRD_dknowlist tr:hover {
+    background-color: #E7C9A7
+}
+
+.delete_list {
+    border: 1px solid #A74E36;
+    background: white;
+    color: #A74E36;
+    font-size: 25px;
+    font-family: 'Poor Story',sans-serif;
+    font-weight: bold;
+    width: 280px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition-duration: 0.4s;
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.delete_list:hover {
+    border: 1px solid white;
+    background: #A74E36;
+    color: white;
+}
+
+@media screen and (max-width: 540px) {
+    #LRN_HRD_wrap {
+        width: 350px;
+        height: 500px;
+    }
+    
+    #LRN_HRD_card {
+        position: relative;
+        width: 350px;
+        height: 250px;
+        float: left;
+    }
+    #LRN_HRD_card1 {
+        position: absolute;
+        width: 350px;
+        height: 250px;
+        background-size: 350px 250px;
+    }
+    #LRN_HRD_card2 {
+        position: absolute;
+        width: 350px;
+        height: 250px;
+        background-size: 350px 250px;
+    }
+    #LRN_HRD_card3 {
+        position: absolute;
+        width: 350px;
+        height: 250px;
+        background-size: 350px 250px;
+    }
+
+    #LRN_HRD_dknow_title {
+        height: 55px;
+        width: 350px;
+    }
+    #LRN_HRD_dknow_UD {
+        display: none;
+    }
+    #LRN_HRD_dknow_table_wrap {
+        width: 350px;
+    }
+    #LRN_HRD_dknow_table {    
+        width: 350px;
+    }
+    #LRN_HRD_dknow_table td {
+        height: 30px;
+        text-align: center;
+    }
+    .table_counter {
+        width: 70px;
+        display: none;
+    }
+    .counter_tr {
+        display: none;
+    }
+    .time_tr {
+        display: none;
+    }
+    .table_kanji {
+        width: 80px;
+    }
+    .table_yomigana {
+        width: 80px;
+    }
+    .table_korean {
+        width: 80px;
+    }
+    .table_delete {
+        width: 40px;
+    }
+    .table_time {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 767px) {
+    #LRN_HRD_wrap {
+        width: 530px;
+        height: 500px;
+    }
+    
+    #LRN_HRD_card {
+        position: relative;
+        width: 530px;
+        height: 250px;
+        float: left;
+    }
+    #LRN_HRD_card1 {
+        position: absolute;
+        width: 530px;
+        height: 250px;
+        background-size: 530px 250px;
+    }
+    #LRN_HRD_card2 {
+        position: absolute;
+        width: 530px;
+        height: 250px;
+        background-size: 530px 250px;
+    }
+    #LRN_HRD_card3 {
+        position: absolute;
+        width: 530px;
+        height: 250px;
+        background-size: 530px 250px;
+    }
+    
+    #LRN_HRD_card h2 {
+        font-size: 90px;
+    }
+    #LRN_HRD_next {
+        width: 180px;
+    }
+    #HRD_timer {
+        line-height: 85px;
+        height: 85px;
+        width: 265px;
+        font-size: 25px;
+    }
+    #LRN_HRD_dknow {
+        text-align: center;
+        line-height: 125px;
+        width: 350px;
+        height: 125px;
+        background: #A74E36;
+        float: left;
+    }
+    #LRN_HRD_mynote {
+        width: 265px;
+    }
+    #LRN_HRD_timer {
+        width: 265px;
+        height: 85px;
+    }
+    #LRN_HRD_dknow_title {
+        height: 55px;
+        width: 350px;
+    }
+    #LRN_HRD_dknow_UD {
+        display: none;
+    }
+    #LRN_HRD_dknow_table_wrap {
+        width: 530px;
+    }
+    #LRN_HRD_dknow_table {    
+        width: 530px;
+    }
+    #LRN_HRD_dknow_table td {
+        height: 30px;
+        text-align: center;
+    }
+    .table_counter {
+        width: 70px;
+        display: none;
+    }
+    .counter_tr {
+        display: none;
+    }
+    .time_tr {
+        display: none;
+    }
+    .table_kanji {
+        width: 160px;
+    }
+    .table_yomigana {
+        width: 160px;
+    }
+    .table_korean {
+        width: 170px;
+    }
+    .table_delete {
+        width: 40px;
+    }
+    .table_time {
+        display:none;
+    }
+}

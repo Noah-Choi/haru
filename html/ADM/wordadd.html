@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../js/ADM/wordadd.js"></script>
+
+</head>
+
+<body>
+    <form id="list" action="submit">
+        <select name="dan" id="dan">
+            <option value="a">아행</option>
+            <option value="ka">카행</option>
+            <option value="sa">사행</option>
+            <option value="ta">타행</option>
+            <option value="na">나행</option>
+            <option value="ha">하행</option>
+            <option value="ma">마행</option>
+            <option value="ya">야행</option>
+            <option value="ra">라행</option>
+            <option value="wa">와행</option>
+        </select>
+
+
+        <label for="test_a">등급</label>
+        <input type="text" id="test">
+        <label for="test_a">요미가나</label>
+        <input type="text" id="yomigana">
+        <label for="test_a">한자</label>
+        <input type="text" id="kanji">
+        <label for="test_a">형태</label>
+        <input type="text" id="form">
+        <label for="test_a">한글</label>
+        <input type="text" id="korean">
+
+        <button type="submit" onclick="saveForm()">저장</button>
+    </form>
+
+    <a id="down" href="#" download="wordlist.json">down</a>
+</body>
+
+</html>

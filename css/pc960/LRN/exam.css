@@ -1,0 +1,80 @@
+.exm {
+    background: #E8D7CA;
+}
+
+.exam_detail {
+    width: 90%;
+    margin: 0 auto;
+}
+.exam_detail > p:first-child{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.exam_detail > p:last-child{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#btn_start_exam {
+
+    overflow: hidden;
+    margin: 60px;
+    margin-left: 28%;
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    border: 1px solid #512B37;
+    background-color: #512B37;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#btn_start_exam p {
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+#btn_start_exam p:first-child{
+    font-size: 45px;
+    margin-top: 65px;
+}
+
+#btn_start_exam p:last-child{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#btn_start_exam:hover {
+    border: 1px solid #512B37;
+    background-color: whitesmoke;
+    transition-duration: 0.5s;
+}
+#btn_start_exam:hover p {
+    color: #512B37;
+    transition-duration: 0.5s;
+}
+
+#haru_subcontents b {
+    color: #512B37;
+}
+@media screen and (max-width: 540px) {
+    .exam_detail p:first-child{
+        font-size: 22px;
+    }
+
+    .exam_detail p:last-child{
+        font-size: 16px;
+    }
+
+    /* .exam_detail p{
+        margin-left: 3%;
+    } */
+
+    #btn_start_exam{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}

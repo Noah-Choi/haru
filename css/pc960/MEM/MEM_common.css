@@ -1,0 +1,80 @@
+
+/* input box */
+.MEM_inputBox{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  margin-right: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  box-sizing: border-box;
+  font-size: 13px;
+}
+/* input box error */
+.MEM_inputBox ~ p{
+    margin: 0;
+    margin-bottom: 5px;
+    color:darkred;
+}
+/* input button */
+.MEM_confirmBtn{
+    width: 35%;
+    background-color: #512B37;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    font-size: 13px;
+}
+.MEM_cancelBtn{
+  width: 35%;
+  background-color: gray;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 20px;
+  margin-right:10px;
+  margin-left: 5%;
+  border: none;
+  /* border-radius: 4px; */
+  cursor: pointer;
+  float: left;
+  font-size: 13px;
+}
+
+
+@media only screen and (max-width:767px) {
+  .MEM_confirmBtn, .MEM_cancelBtn {
+    width: 47.5%;
+  }
+  .MEM_cancelBtn{
+    margin-left: 0%;
+  }
+  .MEM_inputBox{
+    width: 80%;
+    margin-right: 1%;
+  }
+
+}
+.MEM_btn{
+  background-color: #AF8672;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  /* border-radius: 4px; */
+  cursor: pointer;
+  size: 10px;
+  font-size: 13px;
+}
+/* scroll box for terms and conditions */
+.MEM_scroll_box{
+    padding: 15px;
+    height: 100px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+}

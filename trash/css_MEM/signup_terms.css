@@ -1,0 +1,154 @@
+/* 초기화 */
+body { background: #EBE4DD }
+* { font-family: 'Malgun Gothic', sans-serif; margin: 0; padding: 0; }
+ol, ul { list-style: none; }
+a { outline: 0; text-decoration: none; color: black;}
+img { border: 0; }
+/* //초기화 */
+footer { color: #AF8672; }
+footer a { color: #AF8672; }
+
+header{
+  height: 150px;
+  
+}
+header p{
+  font-size: 45px;
+  font-family: 'Stylish', sans-serif;
+  color: #AF8672;
+  text-align: center;
+  line-height: 150px;
+  margin:0;
+}
+
+#signup_header {
+  width: 960px;
+  margin: 0 auto;
+  background-color: black;
+  height: 120px;
+}
+#signup_header_title {
+  color: white;
+  line-height: 50px;
+  height: 20px;
+  width: 50px;
+}
+#wrap{
+  margin-top: 50px;
+  width: 768px;
+  margin: 50px auto 0;
+}
+/* terms agreement */
+#terms{
+  float: left;
+  width: 70%;
+  position: relative;
+}
+#terms>div{
+  margin-bottom: 25px;
+}
+#terms> div> div{
+  border: 1px solid #888;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: scroll;
+  height: 120px;
+  overflow-x: hidden;
+  background-color: white;
+}
+#terms> div> span{
+  position: absolute;
+  right: 0;
+}
+
+
+/* registration status side bar */
+#side_status{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  float: right;
+  margin-top: 10px;
+}
+i{
+  margin:20px;
+}
+.dot {
+  height: 100px;
+  width: 100px;
+  background-color: #5D5753;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  color: white;
+}
+.dot p{
+  display: table-cell;
+  height: 100px;
+  width: 100px;
+  vertical-align: middle;
+}
+.dot + p{
+  display: inline-block;
+  border: 1px solid black;
+  margin: auto;
+}
+.arrow_down {
+  border: solid rgb(68, 67, 67);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* register / cancel button */
+#bottomBtn{
+  clear: both;
+  text-align: center;
+  margin: 50px;
+}
+#bottomBtn button{
+  width: 100px; height: 40px;
+  margin: 20px;
+  font-size: 14px;
+}
+#nextBtn{
+  background-color: #AF8672;
+  color: white;
+}
+#cancelBtn{
+  background-color: #5D5753;
+  color: white;
+}
+/* footer */
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  position: relative; 
+  text-align: center;
+}
+footer p{
+  text-align: center;
+  width: 960px;
+  margin-top: 10px;
+}
+/* FNB */
+#haru_footer_wrap > #haru_fnb {
+ top: 15px;
+}
+#haru_fnb > ul { overflow: hidden; }
+#haru_fnb > ul > li { float: left; }
+#haru_fnb > ul > li > a {
+  font-size: 14px;
+  display: block;
+  padding: 0 25px;
+}
+#haru_fnb > ul > li > a:hover {
+  font-weight: bold;
+}
+#haru_contactus { position: absolute; top: 45px; }
+#haru_contactus > p { font-size: 14px; }
+.laws { color: orange; }

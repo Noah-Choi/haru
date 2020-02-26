@@ -1,0 +1,107 @@
+/* 페이지 소개 카테고리 헤더 */
+#haru_INF_header {
+    width: 960px; height: 180px;
+    margin: 0 auto;
+    color: white;
+    background-image: url('../../../img/INF.jpg');
+    position: relative;
+}
+
+#haru_INF_header_subject {
+    float: right;
+    margin-top: 18px;
+    margin-right: 40px;
+    width: 430px;
+    height: 140px;
+    position: relative;
+    border: 2px solid white;
+}
+#haru_INF_header_subject > h1 {
+    margin-top: 15px;
+    margin-right: 20px;
+    text-align: right;
+}
+#haru_INF_header_subject > p {
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+/* 컨텐츠 960 */
+#haru_contents_wrap {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/* 서브컨텐츠 768 */
+#haru_subcontents {
+    float: left;
+    width: 768px;
+    margin: 0 auto;
+}
+
+#haru_aside {
+    float: left;
+    position: relative;
+    width: 160px;
+}
+
+/* 외우자 카테고리 GNB 구성 */
+#haru_aside > #haru_snb {
+    width: 130px;
+    left: 0;
+}
+#haru_aside > #haru_snb {
+    border: 1px solid black
+}
+#haru_snb > ul > li > a {
+    display: block;
+    padding: 0 15px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    border-bottom: 1px solid #5d5753;
+}
+.snb_link{
+    background-color: whitesmoke;
+}
+.snb_link:hover {
+    transition-duration: 0.3s;
+    background-color: #512B37;
+    color: white;
+}
+#haru_snb > ul > li:first-child > a {
+    font-weight: bold;
+    background-color: #AF8672;
+    color: white;
+    cursor: default;
+}
+#haru_snb > ul > li:last-child > a {
+    border-bottom: 0px;
+}
+
+/* 서브 컨텐츠 헤더 */
+#haru_subheader {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;    
+    margin-bottom: 50px;
+}
+#haru_subtitle {
+    float: left;
+    width: 300px;
+    font-size: 38px;
+}
+#haru_cat {
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+    width: 280px;
+    float: right;
+}

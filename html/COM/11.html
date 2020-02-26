@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<!-- 추가 -->
+<style>
+   #img { width:400px;
+         height:200px;
+      }
+   
+</style>
+<script>
+
+   var iCount = 0;
+   var imgs = new Array();
+   imgs.push("./images/img1.jpg");
+   imgs.push("./images/img2.jpg");
+   imgs.push("./images/img3.jpg");
+   imgs.push("./images/img4.jpg");
+   
+   window.onload = function(){
+	   setInterval("imageChange()", 1000);
+   }
+   
+   function imageChange()
+   {
+       document.getElementById("img").setAttribute("src", imgs[iCount++ % imgs.size()]);
+   }
+   
+</script>
+</head>
+<body>
+   <center>
+      <h1>기업 이미지 동적인 교체 처리</h1>
+      <img id="img">
+   </center>
+</body>
+</html>

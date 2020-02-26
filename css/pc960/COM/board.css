@@ -1,0 +1,175 @@
+div.container {
+    /* width:800px; */
+    /* background-color: #ccc; */
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.clfx {
+    clear: both;
+}
+
+.btn {
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: #512B37;
+    color: white;
+}
+
+.search>.category>.cate {
+    margin-left: 15px;
+    line-height: 37px;
+}
+.catselect {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 37px;
+}
+
+.comm_header h3 {
+    float: left;
+}
+
+.comm_header span {
+    float: right;
+}
+
+.search {
+    padding-bottom: 5px;
+}
+
+.search img {
+    width: 25px;
+    height: 25px;
+}
+
+.search a {
+    float: left;
+}
+
+.search form {
+    float: right;
+}
+
+.search>form>#search_type {
+    float: left;
+    padding: 5px;
+}
+
+.search>form>#search_input {
+    padding: 5px;
+}
+
+.search>form>.btn {
+    height: 32px;
+    padding: 3px;
+    border: 1px solid black;
+    float: right;
+    /* edit by SEZI */
+    background: #AF8672;
+}
+
+.board_section {
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 0px auto;
+    /* edit by SEZI */
+    margin-bottom: 50px;
+}
+
+/* edit by SEZI */
+table>thead {
+    background-color: #AF8672;
+    color: white;
+    font-weight: 900;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+table>tbody>tr:hover {
+    background: #E0AC80;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+table>tbody>tr>td {
+    width: 100px;        
+    background: whitesmoke;
+}
+
+table>thead>tr {
+    height: 40px;
+}
+
+table>tbody {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+table>tbody>tr {
+    /* edit by SEZI */
+    height: 45px;
+    border-bottom: 1px solid #AAA;
+}
+
+.board_article {
+    width: 50%;
+    text-overflow:ellipsis;overflow: hidden;white-space: nowrap;word-wrap: normal !important;
+}
+
+.board_section>.pagination {
+    /* edit by SEZI */
+    width: 310px;
+    height:30px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.pagination>.btn {
+    /* border-radius: 100%; */
+    margin: 0 auto;
+    width: 30px;
+    float: left;
+    text-align: center;
+    height: 25px;
+    line-height: 10px;
+}
+
+.pagination>button {
+    margin: 0 auto;
+    width: 50px;
+    float: left;
+    text-align: center;
+}
+
+.pagination>ul{
+    text-align: center;
+}
+
+.pagination>ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#write_btn {
+    width: 100px;
+    text-align: center;
+    float: right;
+}

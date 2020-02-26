@@ -1,0 +1,5 @@
+[{"select":"a","test":"ㅁㄴㅇ","form":"ㅁㅇㄴ","kanji":"ㅁㄴㅇ","yomi":"ㅁㄴㅇ","korean":"ㄴㅁㅇ"},{"select":"a","test":"cc","form":"ccc","kanji":"cc","yomi":"cccc","korean":"cccc"},{"select":"a","test":"vvv","form":"vvvv","kanji":"vvv","yomi":"vvv","korean":"vvv"}]
+
+
+let kanji = wordlist[n].kanji
+

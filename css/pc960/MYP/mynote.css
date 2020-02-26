@@ -1,0 +1,170 @@
+.myn {
+    background: #E8D7CA;
+}
+
+#list_none {
+    display: table-cell;
+    vertical-align: middle;
+    width: 764px;
+    height: 100px;
+    background: #FFF8E1;
+    font-size: 25px;
+    text-align: center;
+    color: #AF8672;
+    border: 1px solid black;
+    border-top: none;
+}
+
+#MYP_MYN_table_wrap {
+    width: 764px;
+    height: 100%;    
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#MYP_MYN_table {
+    margin: 0 auto;
+    width: 764px;
+    border: 1px solid black;
+}
+#MYP_MYN_table th {
+    height: 30px;
+    background: #AF8672;
+    color: white;   
+}
+#MYP_MYN_table td {
+    height: 30px;
+    text-align: center;
+}
+#MYP_MYN_notelist {
+    background: #FFF8E1;
+    margin-bottom: 100px;
+}
+.table_form {
+    width: 70px;
+}
+.table_kanji {
+    width: 170px;
+}
+.table_yomigana {
+    width: 170px;
+}
+.table_korean {
+    width: 170px;
+}
+.table_time {
+    width: 160px;
+}
+.table_delete {
+    width: 40px;
+}
+.delete_tr {        
+    cursor: default;
+}
+#all_check {
+    display: none;
+}
+#MYN_table_control {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.all_check_label {
+    width: 100px;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    border: 1px solid black;    
+    background: whitesmoke; 
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.all_check_label:hover {
+    border: 1px solid #512B37;
+    background: #512B37;
+    color: white;
+}
+
+.delete_list {
+    width: 150px;
+    text-align: center;
+    float: right;    
+    border: 1px solid black;
+    background: whitesmoke;   
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.delete_list:hover {
+    border: 1px solid #A74E36;
+    background: #A74E36;
+    color: white;
+}
+
+.wordChkbox {
+    display: none;
+}
+
+.wordChkbox + label {
+    margin: 0 auto;
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url('../../../img/unchecked.png') no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+.wordChkbox:checked + label { background-image: url('../../../img/checked.png'); }
+
+@media screen and (max-width: 540px) {
+    #MYP_MYN_table_wrap {
+        width: 95%;
+    }    
+    #MYP_MYN_table {
+        width: 100%;
+    }
+    .table_kanji {
+        width: 80px;
+    }
+    .table_yomigana {
+        width: 80px;
+    }
+    .table_korean {
+        width: 80px;
+    }
+    .table_delete {
+        width: 40px;
+    }
+    .table_time {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 767px) {
+    #MYP_MYN_table_wrap {
+        width: 95%;
+    }    
+    #MYP_MYN_table {
+        width: 100%;
+    }
+    .table_kanji {
+        width: 160px;
+    }
+    .table_yomigana {
+        width: 160px;
+    }
+    .table_korean {
+        width: 170px;
+    }
+    .table_delete {
+        width: 40px;
+    }
+    .table_time {
+        display:none;
+    }
+}

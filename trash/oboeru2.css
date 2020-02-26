@@ -1,0 +1,42 @@
+*
+{
+    margin: 0; padding: 0;
+    color: #512B37;
+    font-family: 'Malgun Gothic', sans-serif;
+    text-align: center;
+    text-decoration-line: none;
+}
+
+body
+{
+    width: 768px;
+}
+
+table
+{
+    border: 1px solid black;
+}
+
+td
+{
+    border: 1px solid black;
+    width: 153px;
+}
+
+.checkbox
+{
+    border: 1px solid black;
+    width: 768px;
+}
+
+.hang
+{
+    border: 1px solid black;
+    border-top: none;
+    font-size: 1.5em;
+}
+
+.firstline
+{
+    background-color: #AF8672;
+}

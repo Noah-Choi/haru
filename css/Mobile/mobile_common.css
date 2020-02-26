@@ -1,0 +1,475 @@
+@media screen and (max-width: 540px) {
+    /* 540 코드 */
+    html { width: 100%; }
+    #haru_header_upper_wrap { margin: 0 auto; width: 100%; height: 60px; 
+        position: relative; }
+    #haru_footer_wrap { margin: 0 auto; width: 100%; height: 120px; 
+        position: relative; }
+    .haru_pc { display: none; }
+    .haru_mobile { display: block;}
+
+    /* 헤더 */
+    #haru_header_upper {
+        width: 100%;
+        height: 60px;
+        top: 0;
+        /* background-color: #EBE4DD; */
+        position: relative;
+        z-index: 100;
+    }
+
+    #haru_title {
+        position: absolute;
+        line-height: 60px;
+        top: 50%;
+        margin-top:-30px;
+        left: 0;
+        margin-left:15px;
+        width: 140px; height: 60px;
+        display: block;
+        /* color: #AF8672; */
+        font-size: 30px;
+    }
+
+
+    #haru_mobile_sidemenu_toggle {
+        float: right;
+        margin-top: 7px;
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+    }
+
+    .sidemenuoff {
+        display: none;
+    }
+
+    #haru_sidemenu::-webkit-scrollbar { display:none; }
+
+    #haru_sidemenu {
+        display: none;
+        z-index: 99;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../img/sidemenu.png);
+        background-size: 100%;
+        overflow-y: scroll;
+        -ms-overflow-style: none;  
+    }
+
+    /* #haru_sidemenu_list {
+        position: absolute;
+        margin-left: -100px;
+        top: 20%;
+        left: 50%;
+        width: 200px;
+        height: 200px;  
+    } */
+
+    .sidelist_subject {
+        color: orange;
+        font-size: 40px;
+        font-family: 'Amsterdam',sans-serif;
+        font-weight: bold;
+    }
+
+    .sidelist_list {
+        color: white;
+        font-size: 20px;
+    }
+
+    #haru_signup_mobile {
+        width: 298px;
+        height: 80px;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        border: 4px solid orange;        
+    }
+
+    .signup_wrap {
+        width: 300px;
+        height: 80px;    
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        overflow: hidden;
+    }
+    #haru_signup_mobile > ul > li {
+        line-height: 80px;
+        float: left; }
+    #haru_signup_mobile > ul > li > a {
+        display: block; 
+        color: white;
+        font-size: 30px;
+        padding: 0 22px;
+    }
+
+    #haru_sidemenu ul {
+        text-align: center;
+    }
+    #haru_sidemenu ul:first-child {
+        margin-top: 20px;
+    }
+    #haru_sidemenu ul:last-child{
+        margin-bottom: 20px;
+    } 
+    #haru_sidemenu li {
+        margin-bottom: 10px;
+    }
+    #haru_sidemenu li:first-child {
+        margin-bottom: 20px;
+    }
+    #haru_sidemenu li:last-child {
+        margin-bottom: 30px;
+    }
+
+    #haru_header_upper_wrap_sdm {
+        width: 100%;
+        height: 60px;
+        top: 0;
+        position: relative;
+    }
+
+    #haru_title_sdm {
+        position: absolute;
+        line-height: 60px;
+        top: 50%;
+        margin-top:-30px;
+        left: 0;
+        margin-left:15px;
+        width: 140px; height: 60px;
+        display: block;
+        font-size: 30px;
+    }
+
+
+    #haru_mobile_sidemenu_toggle_sdm {
+        float: right;
+        margin-top: 7px;
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+    }
+
+    /* FNB */
+    footer {
+        width: 100%;
+        height: 120px;
+    }
+    .fnb_FAQ {
+        display: none;
+    }
+    #haru_footer_wrap > #haru_fnb {
+        position: absolute;
+        width: 264px;
+        margin-left: -132px;
+        left: 50%;
+        top: 15px;
+    }
+    #haru_fnb > ul { overflow: hidden; }
+    #haru_fnb > ul > li { float: left; }
+    #haru_fnb > ul > li > a {
+        font-size: 12px;
+        display: block;
+        padding: 0 10px;
+    }
+    #haru_fnb > ul > li > a:hover {
+        font-weight: 100;
+    }
+    #haru_contactus { width: 100%; margin: 0 auto; text-align: center; position: absolute; top: 45px; }
+    #haru_contactus > p { width: 100%; font-size: 12px; }
+    .laws { color: orange; }
+    .address { margin-bottom: 10px; }
+    /* .copyright { margin-bottom: 10px;} */
+    
+}
+
+@media screen and (min-width: 541px) and (max-width: 767px) {
+    /* 540-1 코드 */
+    html { width: 100%; }
+    #haru_header_upper_wrap { margin: 0 auto; width: 100%; height: 80px; 
+        position: relative; }
+    #haru_footer_wrap { margin: 0 auto; width: 100%; height: 120px; 
+        position: relative; }
+    .haru_pc { display: none; }
+    .haru_mobile { display: block;}
+
+    /* 헤더 */
+    #haru_header_upper {
+        width: 100%;
+        height: 80px;
+        top: 0;
+        /* background-color: #EBE4DD; */
+        position: relative;
+        z-index: 100;
+    }
+
+    #haru_title {
+        position: absolute;
+        line-height: 80px;
+        top: 50%;
+        margin-top:-40px;
+        left: 0;
+        margin-left:15px;
+        width: 180px; height: 80px;
+        display: block;
+        /* color: #AF8672; */
+        font-size: 40px;
+    }
+
+
+    #haru_mobile_sidemenu_toggle {
+        float: right;
+        margin-top: 14px;
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+    }
+
+    .sidemenuoff {
+        display: none;
+    }
+
+    #haru_sidemenu::-webkit-scrollbar { display:none; }
+
+    #haru_sidemenu {
+        display: none;
+        z-index: 99;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../img/sidemenu.png);
+        background-size: 100%;
+        overflow-y: scroll;
+        -ms-overflow-style: none;  
+    }
+
+    /* #haru_sidemenu_list {
+        position: absolute;
+        margin-left: -100px;
+        top: 20%;
+        left: 50%;
+        width: 200px;
+        height: 200px;  
+    } */
+
+    .sidelist_subject {
+        color: orange;
+        font-size: 60px;
+        font-weight: bold;
+        font-family: 'Amsterdam', sans-serif;
+    }
+
+    .sidelist_list {
+        color: white;
+        font-size: 30px;
+    }
+
+    #haru_signup_mobile {
+        width: 298px;
+        height: 80px;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        border: 4px solid orange;        
+    }
+
+    .signup_wrap {
+        width: 300px;
+        height: 80px;    
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        overflow: hidden;
+    }
+    
+    #haru_signup_mobile > ul > li {
+        line-height: 80px;
+        float: left; }
+    #haru_signup_mobile > ul > li > a {
+        display: block; 
+        color: white;
+        font-size: 30px;
+        padding: 0 22px;
+    }
+
+    #haru_sidemenu ul {
+        text-align: center;
+    }
+    #haru_sidemenu ul:first-child {
+        margin-top: 20px;
+    }
+    #haru_sidemenu ul:last-child{
+        margin-bottom: 20px;
+    } 
+    #haru_sidemenu li {
+        margin-bottom: 10px;
+    }
+    #haru_sidemenu li:first-child {
+        margin-bottom: 20px;
+    }
+    #haru_sidemenu li:last-child {
+        margin-bottom: 30px;
+    }
+    #header_margin {
+        height: 80px;
+    }
+
+    #haru_header_upper_wrap_sdm {
+        width: 100%;
+        height: 80px;
+        top: 0;
+        position: relative;
+    }
+
+    #haru_title_sdm {
+        position: absolute;
+        line-height: 80px;
+        top: 50%;
+        margin-top:-40px;
+        left: 0;
+        margin-left:15px;
+        width: 180px; height: 80px;
+        display: block;
+        font-size: 40px;
+    }
+
+
+    #haru_mobile_sidemenu_toggle_sdm {
+        float: right;
+        margin-top: 14px;
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+    }
+
+    /* FNB */
+    footer {
+        width: 100%;
+        height: 120px;
+    }
+    .fnb_FAQ {
+        display: none;
+    }
+    #haru_footer_wrap > #haru_fnb {
+        position: absolute;
+        width: 300px;
+        margin-left: -150px;
+        left: 50%;
+        top: 15px;
+    }
+    #haru_fnb > ul { overflow: hidden; }
+    #haru_fnb > ul > li { float: left; }
+    #haru_fnb > ul > li > a {
+        font-size: 14px;
+        display: block;
+        padding: 0 10px;
+    }
+    #haru_fnb > ul > li > a:hover {
+        font-weight: 100;
+    }
+    #haru_contactus { width: 100%; margin: 0 auto; text-align: center; position: absolute; top: 45px; }
+    #haru_contactus > p { width: 100%; font-size: 14px; }
+    .laws { color: orange; }
+    .address { margin-bottom: 10px; }
+    /* .copyright { margin-bottom: 10px;} */
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+        /* 768 코드 */        
+    html { width: 100%; }
+    #haru_header_upper_wrap { margin: 0 auto; width: 100%; height: 100%; 
+        position: relative; }
+    #haru_header_bottom_wrap { margin: 0 auto; width: 100%; height: 100%; 
+        position: relative; }
+    #haru_footer_wrap { margin: 0 auto; width: 100%; height: 100%; 
+        position: relative; }
+
+    /* GNB */
+    #haru_header_bottom_wrap > #haru_gnb {
+        position: absolute;
+        left: 0;
+    }
+    #haru_gnb > ul { overflow: hidden; }
+    #haru_gnb > ul > li { float: left; }
+    #haru_gnb > ul > li > a {
+        display: block;
+        padding: 0 25px;
+        font-size: 14px;
+        height: 50px;
+        line-height: 50px;
+        font-weight: bold;
+        cursor: default;
+    }
+    /* GNB Dropdown 구성 */
+    .dropdown {
+        width: 100%;
+    }
+    .menu_description {
+        font-size: 14px;
+        height: 40px;
+        background-image: url('../../img/menu_description.jpg');
+        overflow: hidden;
+        opacity: 0.9;
+    }
+
+    .menu_description > p { float: left; line-height: 40px;}
+    .menu_description_subject {
+        margin-left: 20px;
+        margin-right: 50px;
+        color: white;
+        font-weight: bold;
+    }
+    .menu_description_contents {
+        color: #E6CDBf;
+    }
+    .dropdown > ul { overflow: hidden; }
+    .dropdown > ul > li { float: left; }
+    .dropdown > ul > li > a {
+        opacity: 1;
+        color: #AAA;
+        display: block;
+        padding: 0 25px;
+        font-size: 14px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .dropdown > ul > li:hover > a {
+        font-weight: bold;
+        color: white;
+    }
+    .aboutus {
+        margin-left: 320px;
+    }
+    .wan {
+        margin-left: 120px;
+    }
+
+    /* 로그인 칸 */
+    #haru_header_bottom_wrap > #haru_signup {
+        position: absolute;
+        margin-top: 10px;
+        right: 20px;
+        border: 1px solid black;
+        
+    }
+    #haru_signup > ul { overflow: hidden; }
+    #haru_signup > ul > li { float: left; }
+    #haru_signup > ul > li > a {
+        background-color: white;
+        display: block;
+        padding: 5px 12px;   
+        color: black;
+        font-size: 14px;    
+        transition-duration: 0.2s;
+    }
+
+    #haru_signup > ul > li > a:hover {
+        background-color: #512B37;
+        color: white;
+        transition-duration: 0.2s;
+    }
+}

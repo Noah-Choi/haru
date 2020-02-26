@@ -1,0 +1,193 @@
+/* 폰트 */
+@font-face {
+    font-family: "Amsterdam";
+    src:url("/font/Amsterdam.ttf") format("truetype");
+}
+
+/* 초기화 */
+body { 
+    background: #EBE4DD;
+    /* background: url("../../img/cat_background.jpg"); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+* { font-family: 'Malgun Gothic', sans-serif; margin: 0; padding: 0; }
+ol, ul { list-style: none; }
+a { outline: 0; text-decoration: none; color: black;}
+img { border: 0; }
+/* //초기화 */
+header a { color: white; }
+footer { color: white; }
+footer a { color: white; }
+
+/* 모바일용 숨기기 */
+.haru_mobile {display: none;}
+
+/* 서브콘텐츠 폰트 */
+#haru_contents_wrap h1 { font-size: 40px; }
+#haru_contents_wrap h2 { font-size: 70px; }
+#haru_contents_wrap h3 { font-size: 20px; }
+#haru_contents_wrap h4 { font-size: 60px; }
+#haru_contents_wrap h5 { font-size: 25px; }
+/* #haru_contents_wrap p { font-size: 16px; } */
+
+/* 960 코드 */
+#haru_header_upper_wrap { margin: 0 auto; width: 960px; height: 100%; 
+    position: relative; }
+#haru_header_bottom_wrap { margin: 0 auto; width: 960px; height: 100%; 
+    position: relative; }
+#haru_footer_wrap { margin: 0 auto; width: 960px; height: 100%; 
+    position: relative; }
+
+/* 헤더 */
+#haru_header_upper {
+    padding: 0 auto;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    background-image: url(../../img/sidemenu.png);
+    /* background-color: #5D5753; */
+    position: relative;
+}
+#haru_header_bottom {
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    background-color: #AF8672;
+}
+#haru_title {
+    position: absolute;
+    top: 50%;
+    margin-top:-20px;
+    left: 50%;
+    margin-left:-150px;
+    width: 300px; height: 40px;
+    text-align: center;    
+    display: block;
+    color: white;
+    font-size: 45px;
+    font-family: 'Stylish', sans-serif;
+}
+
+/* GNB */
+#haru_header_bottom_wrap > #haru_gnb {
+    position: absolute;
+    left: 0;
+}
+#haru_gnb > ul { overflow: hidden; }
+#haru_gnb > ul > li { float: left; }
+#haru_gnb > ul > li > a {
+    display: block;
+    padding: 0 25px;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    cursor: default;
+}
+/* GNB Dropdown 구성 */
+.dropdown {
+    position: absolute;
+    top: 150px;
+    width: 960px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    opacity: 0.9;
+    display: none;
+    z-index: 99;
+}
+.menu_description {
+    font-size: 15px;
+    height: 40px;
+    background-image: url('../../img/menu_description.jpg');
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+.menu_description > p { float: left; line-height: 40px;}
+.menu_description_subject {
+    margin-left: 20px;
+    margin-right: 50px;
+    color: white;
+    font-weight: bold;
+}
+.menu_description_contents {
+    color: #E6CDBf;
+}
+.dropdown > ul { overflow: hidden; }
+.dropdown > ul > li { float: left; }
+.dropdown > ul > li > a {
+    opacity: 1;
+    color: #AAA;
+    display: block;
+    padding: 0 25px;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+}
+.dropdown > ul > li:hover > a {
+    font-weight: bold;
+    color: white;
+}
+.aboutus {
+    margin-left: 320px;
+}
+.wan {
+    margin-left: 120px;
+}
+
+/* 로그인 칸 */
+#haru_header_bottom_wrap > #haru_signup {
+    position: absolute;
+    margin-top: 10px;
+    right: 20px;
+    border: 1px solid black;
+    
+}
+#haru_signup > ul { overflow: hidden; }
+#haru_signup > ul > li { float: left; }
+#haru_signup > ul > li > a {
+    background-color: white;
+    display: block;
+    padding: 5px 12px;   
+    color: black;
+    font-size: 14px;    
+    transition-duration: 0.2s;
+}
+
+#haru_signup > ul > li > a:hover {
+    background-color: #512B37;
+    color: white;
+    transition-duration: 0.2s;
+}
+/* footer */
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 100px;    
+    background-color: #AF8672;
+}
+
+/* FNB */
+#haru_footer_wrap > #haru_fnb {
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+#haru_fnb > ul { overflow: hidden; }
+#haru_fnb > ul > li { float: left; }
+#haru_fnb > ul > li > a {
+    font-size: 14px;
+    display: block;
+    padding: 0 25px;
+}
+#haru_fnb > ul > li > a:hover {
+    font-weight: bold;
+}
+#haru_contactus { margin-left: 10px; position: absolute; top: 45px; }
+#haru_contactus > p { font-size: 14px; }
+.laws { color: orange; }

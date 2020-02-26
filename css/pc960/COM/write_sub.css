@@ -1,0 +1,12 @@
+
+.articleEditor>#category{
+    float: left;
+    width:100px;
+    padding:5px;
+    height:100%;
+}
+
+#articleTitle{
+    width:88.9%;
+    float: right;
+}

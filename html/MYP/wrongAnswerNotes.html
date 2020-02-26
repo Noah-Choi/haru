@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>하루, 단어 > My 페이지</title>
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/jquery.easing.1.3.js"></script>
+    <script src="../../js/gnb_dropdown.js"></script>
+    <script src="../../js/MYP/wrongAnswerNotes.js"></script>
+    <link rel="stylesheet" href="../../css/pc960/cat_common.css">
+    <link rel="stylesheet" href="../../css/pc960/MYP/MYP_common.css">
+    <link rel="stylesheet" href="../../css/Mobile/MYP/MYP_mobile_common.css">
+    <link rel="stylesheet" href="../../css/Mobile/mobile_common.css">
+    <link rel="stylesheet" href="../../css/pc960/MYP/wrongAnswerNotes.css">
+    <link href="https://fonts.googleapis.com/css?family=Stylish:400" rel="stylesheet">
+</head>
+<body>
+    <!-- haru header -->
+    <div id="haru_header"></div>
+    <!-- //haru header -->
+    <!-- Contents Here -->
+    <div id="haru_MYP_header">
+        <div id = "haru_MYP_header_subject" class="haru_pc">
+        <h1 class="haru_pc">My 페이지</h1>
+        <p class="haru_pc">학습하면서 틀린 단어, 어려웠던 단어 등을 조회하고,<br>회원정보를 변경하실 수 있습니다.</p>
+        </div>        
+        <h1 class="haru_mobile">오답노트</h1>
+    </div>
+    <div id="haru_contents_wrap">
+        <aside id="haru_aside" class="haru_pc">
+            <!-- SNB -->
+            <nav id="haru_snb"></nav>
+            <!-- //SNB -->
+        </aside>
+        <section id="haru_subcontents">
+            <header id="haru_subheader" class="haru_pc">
+                <div id="haru_subtitle">오답노트</div>
+                <div id="haru_cat">
+                    <p>HOME > My 페이지 > 오답노트</p>
+                </div>
+            </header>                    
+            <!-- SubContents Here -->
+            <div id="wrongNotes" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <!-- <div id="wrongNotes"> -->
+            </div>
+            <!-- //SubContents Here -->
+        </section>
+    </div>
+    <!-- //Contents Here -->
+    <!-- haru footer -->
+    <!-- haru footer -->
+    <div id="haru_footer"></div>
+    <!-- //haru footer -->
+    <script>
+            $('#haru_header').load("../haru_header.html");
+            $('#haru_footer').load('../haru_footer.html');
+            $('#haru_snb').load('./MYP_SNB.html');
+    </script>    
+</body>
+</html>

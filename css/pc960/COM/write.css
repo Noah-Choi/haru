@@ -1,0 +1,58 @@
+
+div.container{
+    /* width:800px; */
+    /* background-color: #ccc; */
+    min-height:500px;
+    padding:6px;
+    box-sizing: border-box;
+}
+
+.clfx{
+    clear: both;
+}
+
+.articleEditor>#articleTitle{
+    border: 1px solid #777;
+}
+
+.articleEditor>#articleInner{
+    border:1px solid #777;
+}
+
+.comm_header h3{
+    float: left;
+}
+
+.comm_header span{
+    float: right;
+}
+
+
+#articleTitle{
+    box-sizing: border-box;
+    width:88.9%;
+    padding:5px;
+    margin-bottom: 10px;
+}
+
+#category{
+    height: 30px;
+}
+
+#articleSend{
+    margin-top : 10px;
+    margin-right : 5px;
+    float: right;
+}
+
+#articleCancel{
+    margin-top: 10px;
+    float: right;
+}
+
+.btn{
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 5px;  
+    background-color: #fff;
+}

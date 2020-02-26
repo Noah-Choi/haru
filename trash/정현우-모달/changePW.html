@@ -1,0 +1,16 @@
+<span class="close" onclick="closeModal()">&times;</span>
+<h1 id="modalHeader"> 비밀번호 변경</h1>
+<div id="oldPassword"> 
+    <input type="password" placeholder="현재 비밀번호" class="inputBox"onfocusout="inputCheck(this.id)" id="oldPasswordInput">
+    <p></p>
+</div>
+<br>
+<div id="newPassword">
+    <input type="password" placeholder="새 비밀번호"class="inputBox"onfocusout="inputCheck(this.id)" id="newPasswordInput">
+    <p></p>
+</div>
+<div id="newPasswordCheck">
+    <input type="password" placeholder="새 비밀번호 확인"class="inputBox"onfocusout="inputCheck(this.id)" id="newPasswordCheckInput">
+    <p></p>
+</div>
+<button class=confirmBtn onclick="textInputCheck()">비밀번호 변경</button>

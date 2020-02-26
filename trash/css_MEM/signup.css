@@ -1,0 +1,92 @@
+body{
+  width: 960px;
+  margin: 0 auto;
+}
+#wrap{
+  margin-top: 50px;
+}
+/* registration form */
+#registerForm{
+  float: left;
+  width: 70%;
+}
+#registerForm>div{
+  height: 90px;
+  /* border: 1px solid black; */
+}
+#registerForm>div>h3{
+  margin-left: 50px;
+  width: 160px;
+  display: inline-block;
+  /* border: 1px solid black; */
+  margin-top: 20px
+}
+#registerForm>div>div{
+  vertical-align: middle;
+  display: inline-block;
+  /* border: 1px solid black; */
+  margin-top: 20px
+}
+#registerForm input{
+  height: 35px;
+  width: 220px;
+}
+#registerForm p{
+  margin: 5px;
+  display: block;
+  color: #555;
+}
+#registerForm button{
+  width: 80px; height: 35px;
+  margin-left: 30px;
+}
+
+/* registration status side bar */
+#side_status{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  float: right;
+  margin-top: 10px;
+}
+i{
+  margin:20px;
+}
+.dot {
+  height: 100px;
+  width: 100px;
+  background-color: #5D5753;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  color: white;
+}
+.dot p{
+  display: table-cell;
+  height: 100px;
+  width: 100px;
+  vertical-align: middle;
+}
+.dot + p{
+  display: inline-block;
+  border: 1px solid black;
+  margin: auto;
+}
+.arrow_down {
+  border: solid rgb(68, 67, 67);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* register / cancel button */
+#bottomBtn{
+  clear: both;
+  text-align: center;
+}
+#bottomBtn button{
+  width: 100px; height: 40px;
+  margin: 20px;
+}

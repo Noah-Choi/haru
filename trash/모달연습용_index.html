@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 공용 css -->
+    <style>
+        /* input box */
+        .inputBox{
+          width: 100%;
+          padding: 12px 20px;
+          margin: 10px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        /* input box error */
+        .inputBox + p{
+            margin: 0;
+            margin-bottom: 5px;
+            color:darkred;
+        }
+        /* input button */
+        .confirmBtn{
+            width: 100%;
+            background-color: #512B37;
+            color: white;
+            padding: 14px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        /* scroll box for terms and conditions */
+        .scroll_box{
+            padding: 15px;
+            height: 100px;
+            overflow: scroll;
+            border: 1px solid #ccc;
+            overflow-x: hidden;
+            margin-bottom: 20px;
+        }
+    </style>
+    <!-- 모달 관련 css -->
+    <style>
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        
+        /* Modal Content */
+        .modal-content {
+          background-color: #fefefe;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 360px;
+        }
+        
+        /* The Close Button */
+        .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        </style>
+        <script src="./js/jquery-2.1.1.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <script src="./js/jquery.easing.1.3.js"></script>
+</head>
+<body>
+
+    <!-- 테스트용 -->
+    <ul>
+        <li class="sign"><a href="#" class="openModal" id="loginBtn0" onclick="openModal()">로그인</a></li>
+        <li class="sign"><a href="#" class="openModal" id="termsBtn0" onclick="openModal()">약관</a></li>
+        <li class="sign"><a href="#" class="openModal" id="signupBtn0" onclick="openModal()">회원가입</a></li>
+        <li class="sign"><a href="#" class="openModal" id="forgotIDBtn0" onclick="openModal()">아이디찾기</a></li>
+        <li class="sign"><a href="#" class="openModal" id="forgotPWBtn0" onclick="openModal()">비밀번호찾기</a></li>
+        <li class="sign"><a href="#" class="openModal" id="checkPWBtn0" onclick="openModal()">비밀번호 재확인</a></li>
+        <li class="sign"><a href="#" class="openModal" id="changePWBtn0" onclick="openModal()">비밀번호 변경</a></li>
+    </ul>
+
+    <!-- 메인 헤더에 삽입 -->
+    <div id="modal" class="modal">
+        <div class="modal-content" id="popup_content"></div>
+    </div>
+    
+    <!-- 모달 파일 생성-->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("modal");
+        
+        //open the modal
+        $(".openModal").click(function(){
+            var idName=$(this).attr("id");
+            idName=idName.substring(0,idName.length-4);
+            $('#popup_content').load("./"+idName+".html");
+
+            modal.style.display = "block";
+        });
+
+        //close the modal
+        function closeModal (){
+            modal.style.display = "none";
+        };
+        window.onclick = function(event) {
+            if (event.target == modal) {
+            modal.style.display = "none";
+            };
+        };
+    </script>
+
+    <!-- 텍스트 입력 관련 -->
+    <script>
+        function inputCheck(id){
+            elem=document.getElementById(id);
+            //when password check input was outfocused first
+            if(id=="passwordCheckInput" && document.getElementById("passwordInput").value=="" && elem.value==""){
+                //do nothing
+            }
+            //when value is empty
+            else if(elem.value==""){
+                elem.nextElementSibling.innerHTML=" '"+elem.getAttribute("placeholder")+ "' 을(를) 입력해 주세요.";
+            }
+            //name restriction
+            //userID restriction
+
+            //password restriction
+            else if(id.indexOf("asswordInput")>-1 && elem.value.length<8){
+                elem.nextElementSibling.innerHTML=" 비밀번호는 8자리 이상으로 입력해주세요.";
+            }
+            //password check restriction
+            else if(id.indexOf("asswordCheckInput")>-1 && elem.value!=document.getElementById(id.substring(0,id.length-10)+"Input").value){
+                elem.nextElementSibling.innerHTML=" 비밀번호가 일치하지 않습니다.";
+            }
+            //reset the error message
+            else{
+                elem.nextElementSibling.innerHTML="";
+            }
+        };
+        //check the input: checkbox
+        function checkboxCheck(id){
+            elem=document.getElementById(id);
+
+            if($("input:not(:checked)").length == 0){
+                alert(document.getElementById("modalHeader").innerHTML+" 완료");
+                $('#popup_content').load(elem.getAttribute("href"));
+                modal.style.display = "block";
+            }
+            else{
+                alert("약관에 모두 동의해주세요");
+            };
+        };
+        
+        //check the input: textbox
+        function textInputCheck(id){
+            elem=document.getElementById(id);
+
+            var allFilled=true;
+            $("input").each(function () {
+                if ($(this).val()=="") {
+                    allFilled=false;
+                }
+            });
+
+            var validCheck=true;
+            $("input + p").each(function () {
+                if ($(this).html()!="") {
+                    validCheck=false;
+                }
+            });
+
+            if(allFilled && validCheck){
+                alert(" '"+document.getElementById("modalHeader").innerHTML+"' 을(를) 완료하였습니다.");
+                $('#popup_content').load(elem.getAttribute("href"));
+                modal.style.display = "block";
+            }
+            else if(!allFilled){
+                alert("빈칸 없이 입력해주세요.");
+            }
+            else if(!validCheck){
+                alert("다시 한번 확인해주세요")
+            }
+        };
+    </script>
+</body>
+</html>

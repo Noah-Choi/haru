@@ -1,0 +1,143 @@
+@media screen and (max-width:540px) {
+    #haru_aside {
+        display: none;
+    }
+    #haru_COM_header {
+        width: 100% !important;
+        height: 110px;
+        margin: 0 auto;
+        color: white;
+        background-image: url('../../../img/COM.jpg');
+        position: relative;
+    }
+    #haru_COM_header>h1 {
+        position: absolute;
+        top: 30px;
+        right: 80px;
+    }
+    #haru_COM_header>p {
+        display: none;
+    }
+    /* 컨텐츠 360 */
+    #haru_contents_wrap {
+        width: 100% !important;
+    }
+    /* 서브컨텐츠 768 */
+    #haru_subcontents {
+        float: left;
+        width: 100% !important;
+        min-height: 600px;
+        padding: 0 10px;
+        margin-left: 0 !important;
+        box-sizing: border-box;
+    }
+    #haru_subheader{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 767px) {
+    #haru_COM_header {
+        width: 100%; height: 110px;
+        margin: 0 auto;
+        color: white;
+        background-image: url('../../../img/COM.jpg');
+        position: relative;
+    }
+    
+    #haru_COM_header > h1 {
+        position: absolute;
+        top: 30px;
+        right: 80px;
+    }
+    table>thead>tr>th:nth-child(1){
+        display: none;
+    }
+    table>thead>tr>th:nth-child(4){
+        display: none;
+    }
+    table>tbody>tr>td:nth-child(1){
+        display: none;
+    }
+    table>tbody>tr>td:nth-child(4){
+        display: none;
+    }
+    
+    #haru_COM_header>p {
+        display: none;
+    }
+    /* 컨텐츠 360 */
+    #haru_contents_wrap {
+        width: 100%;
+    }
+    /* 서브컨텐츠 */
+    #haru_subcontents {
+        float: left;
+        width: 100%;
+        min-height: 600px;
+        margin-left: 0px;
+    }
+    #haru_subheader{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    #haru_COM_header {
+        width: 100%;
+    }
+
+    /* 컨텐츠 */
+    #haru_contents_wrap {
+        width: 100%;        
+        margin-top: 20px;
+    }
+
+    /* 서브컨텐츠 768 */
+    #haru_subcontents {
+        float: none;
+        width: 768px;  
+        min-height: 600px;  
+        margin: 0 auto;
+        position: relative;
+    }
+    
+
+    #haru_aside {
+        float: left;
+        position: relative;
+        width: 100%;        
+        margin-bottom: 40px;
+    }
+    /* 외우자 카테고리 GNB 구성 */
+    #haru_aside > #haru_snb {
+        width: 360px;
+        position: relative;
+        margin: 0 auto;
+        z-index: 1;
+    }
+    #haru_snb > ul { overflow: hidden; }
+    #haru_snb > ul > li { float: left; }
+    #haru_snb > ul > li > a {
+        border-bottom: 0px;
+        border-right: 1px solid black;
+        margin:0;
+    }
+    
+    .snb_link:active {
+        transition-duration: 0.3s;
+        background-color: #512B37;
+        color: white;
+    }
+    #haru_snb > ul > li:last-child > a {
+        border-right: 0px;
+    }
+    #haru_subheader{
+        display: none;
+    }
+    #aside_com{
+        height:82px;
+    }
+}

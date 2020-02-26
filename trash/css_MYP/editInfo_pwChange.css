@@ -1,0 +1,51 @@
+/* check password box */
+#editPW>div{
+  display: block;
+}
+#editPW>div>h3{
+  margin-left: 50px;
+  width: 160px;
+  display: inline-block;
+  /* border: 1px solid black; */
+  margin-top: 20px
+}
+#editPW>div>div{
+  vertical-align: middle;
+  display: inline-block;
+  /* border: 1px solid black; */
+  margin-top: 20px
+}
+#editPW input{
+  height: 35px;
+  width: 220px;
+}
+#editPW p{
+  margin: 5px;
+  display: block;
+  color: #555;
+}
+#editPW button{
+  width: 80px; height: 35px;
+  margin-left: 30px;
+}
+#password div{
+  /* border: 1px solid black; */
+}
+#pwChange{
+  display: inline-block;
+  width: auto !important;
+  border: none;
+  padding: 0 10px 0 10px;
+  margin: 0 !important;
+  height: 40px;
+}
+
+/* bottom button */
+#bottomBtn{
+  clear: both;
+  text-align: center;
+}
+#bottomBtn button{
+  width: 80px; height: 40px;
+  margin: 20px;
+}

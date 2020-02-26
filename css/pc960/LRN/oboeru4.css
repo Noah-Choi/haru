@@ -1,0 +1,299 @@
+.wdl {
+    background: #E8D7CA;
+}
+
+
+#LRN_WDL_cat_information {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#list_none {
+    display: table-cell;
+    vertical-align: middle;
+    width: 764px;
+    height: 100px;
+    background: #FFF8E1;
+    font-size: 25px;
+    text-align: center;
+    color: #AF8672;
+    border: 1px solid black;
+    border-top: none;
+    visibility: hidden;
+}
+
+/* 카테고리 선택부분 */
+#LRN_WDL_cat_wrap {
+    margin: 0 auto;
+    width: 750px;
+    height: 100%;
+    position: relative;    
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+#LRN_WDL_cat_test {
+    width: 750px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#LRN_WDL_cat_test_JLPT {
+    border-bottom: 1px solid black;
+}
+#LRN_WDL_cat_form {
+    width: 750px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+#LRN_WDL_cat_test_title {
+    float: left;
+    height: 100px;
+    width: 130px;
+    line-height: 100px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+#LRN_WDL_cat_form_title {
+    float: left;
+    height: 50px;
+    width: 130px;
+    line-height: 50px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.WDL_cat_list {
+    float: left;
+    height: 50px;
+    width: 600px;
+    line-height: 50px;
+}
+.WDL_cat_list > ul > li {
+    float: left;
+    padding: 0 35px;
+}
+
+.JLPT_title {
+    font-weight: bold;
+}
+
+/* 단어리스트 화면 */
+.WDL_list_wrap {
+    margin-bottom: 20px;
+}
+.WDL_list_wrap h5 {
+    margin-left: 20px;
+    height: 80px;
+    line-height: 80px;
+    font-weight: 300;
+}
+.WDL_col_title > h5:first-letter{
+    color: #512B37;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.all_check_label {
+    width: 100px;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    border: 1px solid black;    
+    background: whitesmoke; 
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.all_check_label:hover {
+    border: 1px solid #512B37;
+    background: #512B37;
+    color: white;
+}
+
+.wordselect {
+    font-weight: bold;
+    font-size: 24px;
+    width: 200px;
+    height: 50px;
+    float: right;
+}
+.cat_chk {
+    display: none;
+}
+
+.cat_chk + label {
+    color: #888;
+}
+
+.cat_chk:checked + label {
+    font-weight: bold;
+    color: #A84037;
+}
+
+
+.WDL_col_title:hover {
+    background-color: #D9C9B4;
+    font-weight: bold;
+    font-size: 40px;
+    transition-duration: 0.3s;
+}
+/* 단어리스트 표 */
+.WDL_col_table_wrap {
+    width: 750px;
+    height: 100%;
+    margin-top: 10px;        
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.WDL_col_table {    
+    width: 750px;
+    border: 1px solid black;    
+
+}
+.WDL_col_table th {
+    height: 30px;
+    background: #AF8672;
+    color: white;   
+}
+.WDL_col_table td {
+    height: 30px;
+    text-align: center;
+}
+.WDL_table_list {
+    background: #FFF8E1;
+}
+
+.WDL_table_form {
+    width: 70px;
+}
+.WDL_table_test {
+    width: 100px;
+}
+.WDL_table_kanji {
+    width: 190px;
+}
+.WDL_table_yomigana {
+    width: 190px;
+}
+.WDL_table_korean {
+    width: 190px;
+}
+
+@media screen and (max-width: 540px) {
+    .WDL_col_table {
+        width: 95%;
+        margin: 0 auto;
+    }    
+    .WDL_col_table_wrap {
+        width: 100%;
+    }
+    .WDL_table_kanji {
+        width: 80px;
+    }
+    .WDL_table_yomigana {
+        width: 80px;
+    }
+    .WDL_table_korean {
+        width: 80px;
+    }
+    .WDL_table_test {
+        display:none;
+    }
+    .WDL_cat_list {
+        height: 100px;
+        width: 280px;
+        line-height: 50px;
+    }
+    #LRN_WDL_cat_wrap {
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #LRN_WDL_cat_test_title {
+        height: 200px;
+        line-height: 200px;
+        width: 60px;
+    }
+    #LRN_WDL_cat_test {
+        width: 100%;
+    }
+    .JLPT_title {
+        line-height: 100px;
+    }
+    .WDL_cat_list > ul > li {
+        padding: 0 20px;
+    }
+    #LRN_WDL_cat_form_title {
+        height: 100px;
+        line-height: 100px;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 767px) {
+    .WDL_col_table {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .WDL_col_table_wrap {
+        width: 100%;
+    }
+    .WDL_table_kanji {
+        width: 160px;
+    }
+    .WDL_table_yomigana {
+        width: 160px;
+    }
+    .WDL_table_korean {
+        width: 170px;
+    }
+    .WDL_table_test {
+        display:none;
+    }
+    #LRN_WDL_cat_test {
+        width: 100%;
+    }
+    .WDL_cat_list {
+        height: 50px;
+        width: 460px;
+        line-height: 50px;
+    }
+    .JLPT_title {
+        line-height: 100px;
+    }
+    #LRN_WDL_cat_wrap {
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #LRN_WDL_cat_test_title {
+        height: 100px;
+        line-height: 100px;
+        width: 60px;
+    }
+    #LRN_WDL_cat_test {
+        width: 100%;
+    }
+    .JLPT_title {
+        line-height: 50px;
+    }
+    .WDL_cat_list > ul > li {
+        padding: 0 25px;
+    }
+    #LRN_WDL_cat_form_title {
+        height: 50px;
+        line-height: 50px;
+        width: 60px;
+    }
+    
+}

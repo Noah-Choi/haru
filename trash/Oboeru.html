@@ -1,0 +1,2777 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/pc960/LRN/Check_menu.css">
+    <link rel="stylesheet" href="../../haruword/css/pc960/LRN/Tab_menu.css">
+
+    <script src="../../haruword/js/jquery-2.1.1.min.js"></script>
+    <script src="../../haruword/js/jquery-ui.min.js"></script>
+    <script src="../../haruword/js/jquery.easing.1.3.js"></script>
+
+    <script src="../../haruword/js/LRN/Check_menu.js"></script>
+    <script src="../../haruword/js/LRN/Tab_menu.js"></script>
+
+    <title>외우자</title>
+</head>
+<body>
+
+    <!-- 상위 검색 -->
+    <div class="check">
+
+        <!-- 상위 검색 목록 -->
+        <table id="check_list">
+
+           <tr>
+                <td rowspan="2"><b>출제시험별</b></td>
+                <td><b>JLPT</b></td>
+                <td>
+                    <a href="#" id="N1">
+                        <input type="checkbox" >
+                        N1
+                    </a>
+                    
+                </td>
+                <td>
+                    <a href="#" id="N2">
+                        <input type="checkbox" id="2">
+                        N2
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <input type="checkbox" id="3">
+                        N3
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <input type="checkbox" id="4">
+                        N4
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <input type="checkbox" id="5">
+                        N5
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>JPT</b></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>漢字</td>
+                <td>ETC</td>        
+            </tr>
+
+            <tr>
+                <td><b>품사별</b></td>
+                <td><b>전체품사</b></td>
+                <td>명사</td>
+                <td>대명사</td>
+                <td>동사</td>
+                <td>조사</td>
+                <td>형용사</td>   
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="all">
+    <!-- 아 행 -->
+    <div class="gyou" id="A"></div>
+    <div class="tab" id="A_tab">
+
+        <table class="danlist">
+
+                    <tr class="meishi_n1">
+                        <td>명사</td>
+                        <td>JLPT N1</td>
+                        <td>愛想</td>
+                        <td>あいそう</td>
+                        <td>붙임성, 정나미, 애정</td>
+                    </tr>
+
+                <div class="daimeishi_n1">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N1</td>
+                        <td>己·俺</td>
+                        <td>おれ</td>
+                        <td>나, 내</td>
+                    </tr>
+                </div>
+
+                <div class="doushi n1">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N1</td>
+                        <td>仰ぐ</td>
+                        <td>あおぐ</td>
+                        <td>우러러보다, 치켜들다, 위를 보다</td>
+                    </tr>
+                </div>
+
+                <div class="keiyoushi_n1">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N1</td>
+                        <td>悪どい</td>
+                        <td>あくどい</td>
+                        <td>칙칙하다, 야하다, 악랄하다, 악착같다</td>
+                    </tr>
+                </div>
+
+
+
+                <div class="meishi_n2">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N2</td>
+                        <td>愛情</td>
+                        <td>あいじょう</td>
+                        <td>애정, 사랑</td>
+                    </tr>
+                </div>
+
+                <div class="daimeishi_n2">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N2</td>
+                        <td>彼方</td>
+                        <td>あっち</td>
+                        <td>저기, 저쪽, 저리</td>
+                    </tr>
+                </div>
+
+                <div class="doushi_n2">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N2</td>
+                        <td>合図</td>
+                        <td>あいず</td>
+                        <td>신호</td>
+                    </tr>
+                </div>
+
+                <div class="keiyoushi_n2">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N2</td>
+                        <td>厚かましい</td>
+                        <td>あつかましい</td>
+                        <td>뻔뻔스럽다, 철면피하다</td>
+                    </tr>
+                </div>
+
+                <div id="meishi_n3">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N3</td>
+                        <td>愛</td>
+                        <td>あい</td>
+                        <td>사랑, 애정</td>
+                    </tr>
+                </div>
+
+
+
+                <div id="doushi_n3">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N3</td>
+                        <td>愛する</td>
+                        <td>あいする</td>
+                        <td>사랑하다, 몹시 좋아하다, 즐기다</td>
+                    </tr>
+                </div>
+
+                <div id="meishi_4">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi_4">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N4</td>
+                        <td>彼</td>
+                        <td>あれ</td>
+                        <td>먼 것을 가리키는 말, 저것, 저기</td>
+                    </tr>
+                </div>
+
+                <div id="doushi_4">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi_4">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N4</td>
+                        <td>浅い</td>
+                        <td>あさい</td>
+                        <td>얕다, 깊지 않다, 덜하다</td>
+                    </tr>
+                </div>
+
+
+
+                <div id="meishi_n5">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N5</td>
+                        <td>秋</td>
+                        <td>あき</td>
+                        <td>가을</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi_n5">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N5</td>
+                        <td>彼処·彼所</td>
+                        <td>あそこ</td>
+                        <td>저기, 거기, 저쪽</td>
+                    </tr>
+                </div>
+
+                <div id="doushi_n5">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N5</td>
+                        <td>会う</td>
+                        <td>あう</td>
+                        <td>만나다, 대면하다, 면회하다, 우연히</td>
+                    </tr>
+                </div>
+
+        </table>
+
+    </div>
+
+    <!-- 카 행 -->
+    <div class="gyou" id="K"></div>
+    <div class="tab" id="K_tab">
+
+        <table class="danlist">
+
+            <div class="1">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N1</td>
+                        <td>改悪</td>
+                        <td>かいあく</td>
+                        <td>개악</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N1</td>
+                        <td>改悪</td>
+                        <td>かいあく</td>
+                        <td>개악</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N1</td>
+                        <td>-</td>
+                        <td>きり</td>
+                        <td>만, 밖에</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N1</td>
+                        <td>擽ったい</td>
+                        <td>くすぐったい</td>
+                        <td>간지럽다, 겸연쩍다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="2">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N2</td>
+                        <td>可</td>
+                        <td>か</td>
+                        <td>좋음, 좋다고 평가함</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N2</td>
+                        <td>此等, 是等</td>
+                        <td>これら</td>
+                        <td>이들, 이것들</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N2</td>
+                        <td>開会</td>
+                        <td>かいかい</td>
+                        <td>개회</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N2</td>
+                        <td>硬い</td>
+                        <td>かたい</td>
+                        <td>딱딱하다, 단단하다, 생경하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="3">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N3</td>
+                        <td>-</td>
+                        <td>カード</td>
+                        <td>카드, 명함 모양으로 자른 두꺼운 종이</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N3</td>
+                        <td>此方</td>
+                        <td>こっち</td>
+                        <td>이쪽, 여기, 이리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N3</td>
+                        <td>解決</td>
+                        <td>かいけつ</td>
+                        <td>해결</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N3</td>
+                        <td>-</td>
+                        <td>け</td>
+                        <td>~었지, ~었던가</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N3</td>
+                        <td>賢い</td>
+                        <td>かしこい</td>
+                        <td>현명하다, 영리하다, 요령이 좋다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="4">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N4</td>
+                        <td>-</td>
+                        <td>カーテン</td>
+                        <td>커튼, 휘장, 장막</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N4</td>
+                        <td>彼女</td>
+                        <td>かのじょ</td>
+                        <td>그 여자, 그녀, 애인, 아내</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N4</td>
+                        <td>会議</td>
+                        <td>かいぎ</td>
+                        <td>회의, 평의하는 기관, 모여서 의논함</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N4</td>
+                        <td>-</td>
+                        <td>けれども</td>
+                        <td>~지만, 그러나, ~하나, ~텐데</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N4</td>
+                        <td>堅い·固い</td>
+                        <td>かたい</td>
+                        <td>단단하다, 딱딱하다, 굽히지 않다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="5">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N5</td>
+                        <td>会社</td>
+                        <td>かいしゃ</td>
+                        <td>회사</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N5</td>
+                        <td>此処·此所</td>
+                        <td>ここ</td>
+                        <td>여기, 이제, 이 때</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N5</td>
+                        <td>買(い)物</td>
+                        <td>かいもの</td>
+                        <td>물건을 삼, 산 물건</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N5</td>
+                        <td>位</td>
+                        <td>くらい</td>
+                        <td>지위, 계급, 품격, 품위, 정도, 만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N5</td>
+                        <td>辛い</td>
+                        <td>からい</td>
+                        <td>맵다, 얼얼하다, 짜다, 가혹하다, 괴롭다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+        </table>
+
+
+    </div>
+
+    <!-- 사 행 -->
+    <div class="gyou" id="S"></div>
+    <div class="tab" id="S_tab">
+
+        <table class="danlist">
+
+            <div class="aa">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N1</td>
+                        <td>愛想</td>
+                        <td>あいそう</td>
+                        <td>붙임성, 정나미, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N1</td>
+                        <td>己·俺</td>
+                        <td>おれ</td>
+                        <td>나, 내</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N1</td>
+                        <td>仰ぐ</td>
+                        <td>あおぐ</td>
+                        <td>우러러보다, 치켜들다, 위를 보다</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N1</td>
+                        <td>-</td>
+                        <td>きり</td>
+                        <td>만, 밖에</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N1</td>
+                        <td>悪どい</td>
+                        <td>あくどい</td>
+                        <td>칙칙하다, 야하다, 악랄하다, 악착같다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="2">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N2</td>
+                        <td>愛情</td>
+                        <td>あいじょう</td>
+                        <td>애정, 사랑</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N2</td>
+                        <td>彼方</td>
+                        <td>あっち</td>
+                        <td>저기, 저쪽, 저리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N2</td>
+                        <td>合図</td>
+                        <td>あいず</td>
+                        <td>신호</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N2</td>
+                        <td>-</td>
+                        <td>しき</td>
+                        <td>기껏해야~정도, 겨우~만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N2</td>
+                        <td>厚かましい</td>
+                        <td>あつかましい</td>
+                        <td>뻔뻔스럽다, 철면피하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="3">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N3</td>
+                        <td>愛</td>
+                        <td>あい</td>
+                        <td>사랑, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N3</td>
+                        <td>此方</td>
+                        <td>こっち</td>
+                        <td>이쪽, 여기, 이리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N3</td>
+                        <td>愛する</td>
+                        <td>あいする</td>
+                        <td>사랑하다, 몹시 좋아하다, 즐기다/td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N3</td>
+                        <td>-</td>
+                        <td>け</td>
+                        <td>~었지, ~었던가</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="4">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N4</td>
+                        <td>彼</td>
+                        <td>あれ</td>
+                        <td>먼 것을 가리키는 말, 저것, 저기</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N4</td>
+                        <td>-</td>
+                        <td>けれども</td>
+                        <td>~지만, 그러나, ~하나, ~텐데</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N4</td>
+                        <td>浅い</td>
+                        <td>あさい</td>
+                        <td>얕다, 깊지 않다, 덜하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="5">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N5</td>
+                        <td>秋</td>
+                        <td>あき</td>
+                        <td>가을</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N5</td>
+                        <td>彼処·彼所</td>
+                        <td>あそこ</td>
+                        <td>저기, 거기, 저쪽</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N5</td>
+                        <td>会う</td>
+                        <td>あう</td>
+                        <td>만나다, 대면하다, 면회하다, 우연히</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N5</td>
+                        <td>位</td>
+                        <td>くらい</td>
+                        <td>지위, 계급, 품격, 품위, 정도, 만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N5</td>
+                        <td>丈</td>
+                        <td>だけ</td>
+                        <td>정도·범위의 한계, ~만큼</td>
+                    </tr>
+                </div>
+
+            </div>
+
+        </table>
+
+
+    </div>
+
+    <!-- 타 행 -->
+    <div class="gyou" id="T"></div>
+    <div class="tab" id="T_tab">
+
+        <table class="danlist">
+
+            <div class="aa">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N1</td>
+                        <td>愛想</td>
+                        <td>あいそう</td>
+                        <td>붙임성, 정나미, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N1</td>
+                        <td>己·俺</td>
+                        <td>おれ</td>
+                        <td>나, 내</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N1</td>
+                        <td>仰ぐ</td>
+                        <td>あおぐ</td>
+                        <td>우러러보다, 치켜들다, 위를 보다</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N1</td>
+                        <td>-</td>
+                        <td>きり</td>
+                        <td>만, 밖에</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N1</td>
+                        <td>悪どい</td>
+                        <td>あくどい</td>
+                        <td>칙칙하다, 야하다, 악랄하다, 악착같다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="2">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N2</td>
+                        <td>愛情</td>
+                        <td>あいじょう</td>
+                        <td>애정, 사랑</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N2</td>
+                        <td>彼方</td>
+                        <td>あっち</td>
+                        <td>저기, 저쪽, 저리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N2</td>
+                        <td>合図</td>
+                        <td>あいず</td>
+                        <td>신호</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N2</td>
+                        <td>-</td>
+                        <td>しき</td>
+                        <td>기껏해야~정도, 겨우~만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N2</td>
+                        <td>厚かましい</td>
+                        <td>あつかましい</td>
+                        <td>뻔뻔스럽다, 철면피하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="3">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N3</td>
+                        <td>愛</td>
+                        <td>あい</td>
+                        <td>사랑, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N3</td>
+                        <td>此方</td>
+                        <td>こっち</td>
+                        <td>이쪽, 여기, 이리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N3</td>
+                        <td>愛する</td>
+                        <td>あいする</td>
+                        <td>사랑하다, 몹시 좋아하다, 즐기다/td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N3</td>
+                        <td>-</td>
+                        <td>け</td>
+                        <td>~었지, ~었던가</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="4">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N4</td>
+                        <td>彼</td>
+                        <td>あれ</td>
+                        <td>먼 것을 가리키는 말, 저것, 저기</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N4</td>
+                        <td>-</td>
+                        <td>けれども</td>
+                        <td>~지만, 그러나, ~하나, ~텐데</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N4</td>
+                        <td>浅い</td>
+                        <td>あさい</td>
+                        <td>얕다, 깊지 않다, 덜하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="5">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N5</td>
+                        <td>秋</td>
+                        <td>あき</td>
+                        <td>가을</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N5</td>
+                        <td>彼処·彼所</td>
+                        <td>あそこ</td>
+                        <td>저기, 거기, 저쪽</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N5</td>
+                        <td>会う</td>
+                        <td>あう</td>
+                        <td>만나다, 대면하다, 면회하다, 우연히</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N5</td>
+                        <td>位</td>
+                        <td>くらい</td>
+                        <td>지위, 계급, 품격, 품위, 정도, 만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N5</td>
+                        <td>丈</td>
+                        <td>だけ</td>
+                        <td>정도·범위의 한계, ~만큼</td>
+                    </tr>
+                </div>
+
+            </div>
+
+        </table>
+        
+    </div>
+
+    <!-- 나 행 -->
+    <div class="gyou" id="N"></div>
+    <div class="tab" id="N_tab">
+
+        <table class="danlist">
+
+            <div class="aa">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N1</td>
+                        <td>愛想</td>
+                        <td>あいそう</td>
+                        <td>붙임성, 정나미, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N1</td>
+                        <td>己·俺</td>
+                        <td>おれ</td>
+                        <td>나, 내</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N1</td>
+                        <td>仰ぐ</td>
+                        <td>あおぐ</td>
+                        <td>우러러보다, 치켜들다, 위를 보다</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N1</td>
+                        <td>-</td>
+                        <td>きり</td>
+                        <td>만, 밖에</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N1</td>
+                        <td>悪どい</td>
+                        <td>あくどい</td>
+                        <td>칙칙하다, 야하다, 악랄하다, 악착같다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="2">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N2</td>
+                        <td>愛情</td>
+                        <td>あいじょう</td>
+                        <td>애정, 사랑</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N2</td>
+                        <td>彼方</td>
+                        <td>あっち</td>
+                        <td>저기, 저쪽, 저리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N2</td>
+                        <td>合図</td>
+                        <td>あいず</td>
+                        <td>신호</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N2</td>
+                        <td>-</td>
+                        <td>しき</td>
+                        <td>기껏해야~정도, 겨우~만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N2</td>
+                        <td>厚かましい</td>
+                        <td>あつかましい</td>
+                        <td>뻔뻔스럽다, 철면피하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="3">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N3</td>
+                        <td>愛</td>
+                        <td>あい</td>
+                        <td>사랑, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N3</td>
+                        <td>此方</td>
+                        <td>こっち</td>
+                        <td>이쪽, 여기, 이리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N3</td>
+                        <td>愛する</td>
+                        <td>あいする</td>
+                        <td>사랑하다, 몹시 좋아하다, 즐기다/td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N3</td>
+                        <td>-</td>
+                        <td>け</td>
+                        <td>~었지, ~었던가</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="4">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N4</td>
+                        <td>彼</td>
+                        <td>あれ</td>
+                        <td>먼 것을 가리키는 말, 저것, 저기</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N4</td>
+                        <td>-</td>
+                        <td>けれども</td>
+                        <td>~지만, 그러나, ~하나, ~텐데</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N4</td>
+                        <td>浅い</td>
+                        <td>あさい</td>
+                        <td>얕다, 깊지 않다, 덜하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="5">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N5</td>
+                        <td>秋</td>
+                        <td>あき</td>
+                        <td>가을</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N5</td>
+                        <td>彼処·彼所</td>
+                        <td>あそこ</td>
+                        <td>저기, 거기, 저쪽</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N5</td>
+                        <td>会う</td>
+                        <td>あう</td>
+                        <td>만나다, 대면하다, 면회하다, 우연히</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N5</td>
+                        <td>位</td>
+                        <td>くらい</td>
+                        <td>지위, 계급, 품격, 품위, 정도, 만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N5</td>
+                        <td>丈</td>
+                        <td>だけ</td>
+                        <td>정도·범위의 한계, ~만큼</td>
+                    </tr>
+                </div>
+
+            </div>
+
+        </table>
+        
+    </div>
+
+    <!-- 하 행 -->
+    <div class="gyou" id="H"></div>
+    <div class="tab" id="H_tab">
+
+        <table class="danlist">
+
+            <div class="aa">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N1</td>
+                        <td>愛想</td>
+                        <td>あいそう</td>
+                        <td>붙임성, 정나미, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N1</td>
+                        <td>己·俺</td>
+                        <td>おれ</td>
+                        <td>나, 내</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N1</td>
+                        <td>仰ぐ</td>
+                        <td>あおぐ</td>
+                        <td>우러러보다, 치켜들다, 위를 보다</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N1</td>
+                        <td>-</td>
+                        <td>きり</td>
+                        <td>만, 밖에</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N1</td>
+                        <td>悪どい</td>
+                        <td>あくどい</td>
+                        <td>칙칙하다, 야하다, 악랄하다, 악착같다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="2">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N2</td>
+                        <td>愛情</td>
+                        <td>あいじょう</td>
+                        <td>애정, 사랑</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N2</td>
+                        <td>彼方</td>
+                        <td>あっち</td>
+                        <td>저기, 저쪽, 저리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N2</td>
+                        <td>合図</td>
+                        <td>あいず</td>
+                        <td>신호</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N2</td>
+                        <td>-</td>
+                        <td>しき</td>
+                        <td>기껏해야~정도, 겨우~만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N2</td>
+                        <td>厚かましい</td>
+                        <td>あつかましい</td>
+                        <td>뻔뻔스럽다, 철면피하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="3">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N3</td>
+                        <td>愛</td>
+                        <td>あい</td>
+                        <td>사랑, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N3</td>
+                        <td>此方</td>
+                        <td>こっち</td>
+                        <td>이쪽, 여기, 이리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N3</td>
+                        <td>愛する</td>
+                        <td>あいする</td>
+                        <td>사랑하다, 몹시 좋아하다, 즐기다/td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N3</td>
+                        <td>-</td>
+                        <td>け</td>
+                        <td>~었지, ~었던가</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="4">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N4</td>
+                        <td>彼</td>
+                        <td>あれ</td>
+                        <td>먼 것을 가리키는 말, 저것, 저기</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N4</td>
+                        <td>-</td>
+                        <td>けれども</td>
+                        <td>~지만, 그러나, ~하나, ~텐데</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N4</td>
+                        <td>浅い</td>
+                        <td>あさい</td>
+                        <td>얕다, 깊지 않다, 덜하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="5">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N5</td>
+                        <td>秋</td>
+                        <td>あき</td>
+                        <td>가을</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N5</td>
+                        <td>彼処·彼所</td>
+                        <td>あそこ</td>
+                        <td>저기, 거기, 저쪽</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N5</td>
+                        <td>会う</td>
+                        <td>あう</td>
+                        <td>만나다, 대면하다, 면회하다, 우연히</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N5</td>
+                        <td>位</td>
+                        <td>くらい</td>
+                        <td>지위, 계급, 품격, 품위, 정도, 만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N5</td>
+                        <td>丈</td>
+                        <td>だけ</td>
+                        <td>정도·범위의 한계, ~만큼</td>
+                    </tr>
+                </div>
+
+            </div>
+
+        </table>
+        
+    </div>
+
+    <!-- 마 행 -->
+    <div class="gyou" id="M"></div>
+    <div class="tab" id="M_tab">
+
+        <table class="danlist">
+
+            <div class="aa">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N1</td>
+                        <td>愛想</td>
+                        <td>あいそう</td>
+                        <td>붙임성, 정나미, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N1</td>
+                        <td>己·俺</td>
+                        <td>おれ</td>
+                        <td>나, 내</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N1</td>
+                        <td>仰ぐ</td>
+                        <td>あおぐ</td>
+                        <td>우러러보다, 치켜들다, 위를 보다</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N1</td>
+                        <td>-</td>
+                        <td>きり</td>
+                        <td>만, 밖에</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N1</td>
+                        <td>悪どい</td>
+                        <td>あくどい</td>
+                        <td>칙칙하다, 야하다, 악랄하다, 악착같다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="2">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N2</td>
+                        <td>愛情</td>
+                        <td>あいじょう</td>
+                        <td>애정, 사랑</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N2</td>
+                        <td>彼方</td>
+                        <td>あっち</td>
+                        <td>저기, 저쪽, 저리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N2</td>
+                        <td>合図</td>
+                        <td>あいず</td>
+                        <td>신호</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N2</td>
+                        <td>-</td>
+                        <td>しき</td>
+                        <td>기껏해야~정도, 겨우~만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N2</td>
+                        <td>厚かましい</td>
+                        <td>あつかましい</td>
+                        <td>뻔뻔스럽다, 철면피하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="3">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N3</td>
+                        <td>愛</td>
+                        <td>あい</td>
+                        <td>사랑, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N3</td>
+                        <td>此方</td>
+                        <td>こっち</td>
+                        <td>이쪽, 여기, 이리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N3</td>
+                        <td>愛する</td>
+                        <td>あいする</td>
+                        <td>사랑하다, 몹시 좋아하다, 즐기다/td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N3</td>
+                        <td>-</td>
+                        <td>け</td>
+                        <td>~었지, ~었던가</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="4">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N4</td>
+                        <td>彼</td>
+                        <td>あれ</td>
+                        <td>먼 것을 가리키는 말, 저것, 저기</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N4</td>
+                        <td>-</td>
+                        <td>けれども</td>
+                        <td>~지만, 그러나, ~하나, ~텐데</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N4</td>
+                        <td>浅い</td>
+                        <td>あさい</td>
+                        <td>얕다, 깊지 않다, 덜하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="5">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N5</td>
+                        <td>秋</td>
+                        <td>あき</td>
+                        <td>가을</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N5</td>
+                        <td>彼処·彼所</td>
+                        <td>あそこ</td>
+                        <td>저기, 거기, 저쪽</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N5</td>
+                        <td>会う</td>
+                        <td>あう</td>
+                        <td>만나다, 대면하다, 면회하다, 우연히</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N5</td>
+                        <td>位</td>
+                        <td>くらい</td>
+                        <td>지위, 계급, 품격, 품위, 정도, 만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N5</td>
+                        <td>丈</td>
+                        <td>だけ</td>
+                        <td>정도·범위의 한계, ~만큼</td>
+                    </tr>
+                </div>
+
+            </div>
+
+        </table>
+        
+    </div>
+
+    <!-- 야 행 -->
+    <div class="gyou" id="Y"></div>
+    <div class="tab" id="Y_tab">
+
+        <table class="danlist">
+
+            <div class="aa">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N1</td>
+                        <td>愛想</td>
+                        <td>あいそう</td>
+                        <td>붙임성, 정나미, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N1</td>
+                        <td>己·俺</td>
+                        <td>おれ</td>
+                        <td>나, 내</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N1</td>
+                        <td>仰ぐ</td>
+                        <td>あおぐ</td>
+                        <td>우러러보다, 치켜들다, 위를 보다</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N1</td>
+                        <td>-</td>
+                        <td>きり</td>
+                        <td>만, 밖에</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N1</td>
+                        <td>悪どい</td>
+                        <td>あくどい</td>
+                        <td>칙칙하다, 야하다, 악랄하다, 악착같다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="2">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N2</td>
+                        <td>愛情</td>
+                        <td>あいじょう</td>
+                        <td>애정, 사랑</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N2</td>
+                        <td>彼方</td>
+                        <td>あっち</td>
+                        <td>저기, 저쪽, 저리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N2</td>
+                        <td>合図</td>
+                        <td>あいず</td>
+                        <td>신호</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N2</td>
+                        <td>-</td>
+                        <td>しき</td>
+                        <td>기껏해야~정도, 겨우~만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N2</td>
+                        <td>厚かましい</td>
+                        <td>あつかましい</td>
+                        <td>뻔뻔스럽다, 철면피하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="3">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N3</td>
+                        <td>愛</td>
+                        <td>あい</td>
+                        <td>사랑, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N3</td>
+                        <td>此方</td>
+                        <td>こっち</td>
+                        <td>이쪽, 여기, 이리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N3</td>
+                        <td>愛する</td>
+                        <td>あいする</td>
+                        <td>사랑하다, 몹시 좋아하다, 즐기다/td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N3</td>
+                        <td>-</td>
+                        <td>け</td>
+                        <td>~었지, ~었던가</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="4">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N4</td>
+                        <td>彼</td>
+                        <td>あれ</td>
+                        <td>먼 것을 가리키는 말, 저것, 저기</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N4</td>
+                        <td>-</td>
+                        <td>けれども</td>
+                        <td>~지만, 그러나, ~하나, ~텐데</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N4</td>
+                        <td>浅い</td>
+                        <td>あさい</td>
+                        <td>얕다, 깊지 않다, 덜하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="5">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N5</td>
+                        <td>秋</td>
+                        <td>あき</td>
+                        <td>가을</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N5</td>
+                        <td>彼処·彼所</td>
+                        <td>あそこ</td>
+                        <td>저기, 거기, 저쪽</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N5</td>
+                        <td>会う</td>
+                        <td>あう</td>
+                        <td>만나다, 대면하다, 면회하다, 우연히</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N5</td>
+                        <td>位</td>
+                        <td>くらい</td>
+                        <td>지위, 계급, 품격, 품위, 정도, 만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N5</td>
+                        <td>丈</td>
+                        <td>だけ</td>
+                        <td>정도·범위의 한계, ~만큼</td>
+                    </tr>
+                </div>
+
+            </div>
+
+        </table>
+
+    </div>
+
+    <!-- 라 행 -->
+    <div class="gyou" id="R"></div>
+    <div class="tab" id="R_tab">
+
+        <table class="danlist">
+
+            <div class="aa">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N1</td>
+                        <td>愛想</td>
+                        <td>あいそう</td>
+                        <td>붙임성, 정나미, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N1</td>
+                        <td>己·俺</td>
+                        <td>おれ</td>
+                        <td>나, 내</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N1</td>
+                        <td>仰ぐ</td>
+                        <td>あおぐ</td>
+                        <td>우러러보다, 치켜들다, 위를 보다</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N1</td>
+                        <td>-</td>
+                        <td>きり</td>
+                        <td>만, 밖에</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N1</td>
+                        <td>悪どい</td>
+                        <td>あくどい</td>
+                        <td>칙칙하다, 야하다, 악랄하다, 악착같다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="2">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N2</td>
+                        <td>愛情</td>
+                        <td>あいじょう</td>
+                        <td>애정, 사랑</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N2</td>
+                        <td>彼方</td>
+                        <td>あっち</td>
+                        <td>저기, 저쪽, 저리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N2</td>
+                        <td>合図</td>
+                        <td>あいず</td>
+                        <td>신호</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N2</td>
+                        <td>-</td>
+                        <td>しき</td>
+                        <td>기껏해야~정도, 겨우~만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N2</td>
+                        <td>厚かましい</td>
+                        <td>あつかましい</td>
+                        <td>뻔뻔스럽다, 철면피하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="3">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N3</td>
+                        <td>愛</td>
+                        <td>あい</td>
+                        <td>사랑, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N3</td>
+                        <td>此方</td>
+                        <td>こっち</td>
+                        <td>이쪽, 여기, 이리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N3</td>
+                        <td>愛する</td>
+                        <td>あいする</td>
+                        <td>사랑하다, 몹시 좋아하다, 즐기다/td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N3</td>
+                        <td>-</td>
+                        <td>け</td>
+                        <td>~었지, ~었던가</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="4">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N4</td>
+                        <td>彼</td>
+                        <td>あれ</td>
+                        <td>먼 것을 가리키는 말, 저것, 저기</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N4</td>
+                        <td>-</td>
+                        <td>けれども</td>
+                        <td>~지만, 그러나, ~하나, ~텐데</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N4</td>
+                        <td>浅い</td>
+                        <td>あさい</td>
+                        <td>얕다, 깊지 않다, 덜하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="5">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N5</td>
+                        <td>秋</td>
+                        <td>あき</td>
+                        <td>가을</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N5</td>
+                        <td>彼処·彼所</td>
+                        <td>あそこ</td>
+                        <td>저기, 거기, 저쪽</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N5</td>
+                        <td>会う</td>
+                        <td>あう</td>
+                        <td>만나다, 대면하다, 면회하다, 우연히</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N5</td>
+                        <td>位</td>
+                        <td>くらい</td>
+                        <td>지위, 계급, 품격, 품위, 정도, 만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N5</td>
+                        <td>丈</td>
+                        <td>だけ</td>
+                        <td>정도·범위의 한계, ~만큼</td>
+                    </tr>
+                </div>
+
+            </div>
+
+        </table>
+        
+    </div>
+
+    <!-- 와 행 -->
+    <div class="gyou" id="W"></div>
+    <div class="tab" id="W_tab">
+
+        <table class="danlist">
+
+            <div class="aa">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N1</td>
+                        <td>愛想</td>
+                        <td>あいそう</td>
+                        <td>붙임성, 정나미, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N1</td>
+                        <td>己·俺</td>
+                        <td>おれ</td>
+                        <td>나, 내</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N1</td>
+                        <td>仰ぐ</td>
+                        <td>あおぐ</td>
+                        <td>우러러보다, 치켜들다, 위를 보다</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N1</td>
+                        <td>-</td>
+                        <td>きり</td>
+                        <td>만, 밖에</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N1</td>
+                        <td>悪どい</td>
+                        <td>あくどい</td>
+                        <td>칙칙하다, 야하다, 악랄하다, 악착같다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="2">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N2</td>
+                        <td>愛情</td>
+                        <td>あいじょう</td>
+                        <td>애정, 사랑</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N2</td>
+                        <td>彼方</td>
+                        <td>あっち</td>
+                        <td>저기, 저쪽, 저리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N2</td>
+                        <td>合図</td>
+                        <td>あいず</td>
+                        <td>신호</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N2</td>
+                        <td>-</td>
+                        <td>しき</td>
+                        <td>기껏해야~정도, 겨우~만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N2</td>
+                        <td>厚かましい</td>
+                        <td>あつかましい</td>
+                        <td>뻔뻔스럽다, 철면피하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="3">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N3</td>
+                        <td>愛</td>
+                        <td>あい</td>
+                        <td>사랑, 애정</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N3</td>
+                        <td>此方</td>
+                        <td>こっち</td>
+                        <td>이쪽, 여기, 이리</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N3</td>
+                        <td>愛する</td>
+                        <td>あいする</td>
+                        <td>사랑하다, 몹시 좋아하다, 즐기다/td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N3</td>
+                        <td>-</td>
+                        <td>け</td>
+                        <td>~었지, ~었던가</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="4">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N4</td>
+                        <td>彼</td>
+                        <td>あれ</td>
+                        <td>먼 것을 가리키는 말, 저것, 저기</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N4</td>
+                        <td>挨拶</td>
+                        <td>あいさつ</td>
+                        <td>인사, 서로 만났을 때 주고받는 의례</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N4</td>
+                        <td>-</td>
+                        <td>けれども</td>
+                        <td>~지만, 그러나, ~하나, ~텐데</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N4</td>
+                        <td>浅い</td>
+                        <td>あさい</td>
+                        <td>얕다, 깊지 않다, 덜하다</td>
+                    </tr>
+                </div>
+
+            </div>
+
+            <div class="5">
+
+                <div id="meishi">
+                    <tr>
+                        <td>명사</td>
+                        <td>JLPT N5</td>
+                        <td>秋</td>
+                        <td>あき</td>
+                        <td>가을</td>
+                    </tr>
+                </div>
+
+                <div id="daimeishi">
+                    <tr>
+                        <td>대명사</td>
+                        <td>JLPT N5</td>
+                        <td>彼処·彼所</td>
+                        <td>あそこ</td>
+                        <td>저기, 거기, 저쪽</td>
+                    </tr>
+                </div>
+
+                <div id="doushi">
+                    <tr>
+                        <td>동사</td>
+                        <td>JLPT N5</td>
+                        <td>会う</td>
+                        <td>あう</td>
+                        <td>만나다, 대면하다, 면회하다, 우연히</td>
+                    </tr>
+                </div>
+
+                <div id="jyoshi">
+                    <tr>
+                        <td>조사</td>
+                        <td>JLPT N5</td>
+                        <td>位</td>
+                        <td>くらい</td>
+                        <td>지위, 계급, 품격, 품위, 정도, 만큼</td>
+                    </tr>
+                </div>
+
+                <div id="keiyoushi">
+                    <tr>
+                        <td>형용사</td>
+                        <td>JLPT N5</td>
+                        <td>丈</td>
+                        <td>だけ</td>
+                        <td>정도·범위의 한계, ~만큼</td>
+                    </tr>
+                </div>
+
+            </div>
+
+        </table>
+        
+    </div>
+
+</body>
+
+</html>

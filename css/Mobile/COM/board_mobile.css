@@ -1,0 +1,143 @@
+
+@media screen and (max-width:540px) {
+    
+    div.container{
+        padding:0;
+        
+    }
+    .search {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .category{
+        float: left;
+        width: 280px;
+        height: 30px;
+        /* margin-bottom:10px; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .category>.cate{
+        padding-top:5px;
+    }
+
+    .search>.category>.cate {
+        line-height: unset;
+    }
+    .catselect {
+        line-height: unset;
+    }
+
+    .board_section{
+        min-width: 100%;
+    }
+
+    table {
+        width: 90%;
+        
+        border-collapse: collapse;
+        margin: 0px auto;
+        /* edit by SEZI */
+        margin-bottom: 40px;
+    }
+
+    table>thead {
+        /* edit by SEZI */
+        background-color: #AF8672;        
+        font-weight: 900;
+    }
+
+    table>thead>tr {
+        height: 40px;
+    }
+    table>thead>tr>th{
+        width:10%;
+    }
+    table>tbody>tr>td{
+        width:10%;
+    }
+
+    table>tbody {
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+    table>thead>tr>th:nth-child(1){
+        display: none;
+    }
+    table>thead>tr>th:nth-child(4){
+        display: none;
+    }
+    table>tbody>tr>td:nth-child(1){
+        display: none;
+    }
+    table>tbody>tr>td:nth-child(4){
+        display: none;
+    }
+
+    table>tbody>tr {
+        height: 33px;
+        border-bottom: 1px solid #ccc; 
+    }
+
+    .board_article {
+        width: 20%;
+        /* display: inline-block; */
+        text-overflow:ellipsis;overflow: hidden;white-space: nowrap;word-wrap: normal !important;
+    }
+
+    .board_section>.pagination {
+        width: 210px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .pagination>.btn {
+        /* border-radius: 100%; */
+        margin: 0 auto;
+        width: 30px;
+        float: left;
+        text-align: center;
+        height: 25px;
+        line-height: 10px;
+    }
+
+    .pagination>button {
+        margin: 0 auto;
+        width: 50px;
+        float: left;
+        text-align: center;
+    }
+
+    .pagination>ul li {
+        list-style: none;
+        float: left;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 767px) {
+    .board_article {
+        width: 40%;
+        /* display: inline-block; */
+        text-overflow:ellipsis;overflow: hidden;white-space: nowrap;word-wrap: normal !important;
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    .board_article {
+        width: 50%;
+        /* display: inline-block; */
+        text-overflow:ellipsis;overflow: hidden;white-space: nowrap;word-wrap: normal !important;
+    }
+
+    #haru_subtitle {
+        width:200px;
+        margin-left: 10px;
+    }
+}

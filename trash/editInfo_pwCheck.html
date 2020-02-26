@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>하루, 단어 > 외우자</title>
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../js/jquery.easing.1.3.js"></script>
+    <script src="../../js/gnb_dropdown.js"></script>
+    <link rel="stylesheet" href="../../css/pc960/cat_common.css">
+    <link rel="stylesheet" href="../../css/pc960/MYP/MYP_common.css">
+    <link rel="stylesheet" href="../../css/pc960/MYP/editInfo_pwCheck.css">
+    <link href="https://fonts.googleapis.com/css?family=Stylish:400" rel="stylesheet">
+</head>
+<body>
+    <!-- haru header -->
+    <header>
+        <div id="haru_header_upper">
+            <div id="haru_header_upper_wrap">
+                <a href="../../index.html"><title id="haru_title">하루, 단어</title></a>
+            </div>
+        </div>
+        <div id="haru_header_bottom">
+            <div id="haru_header_bottom_wrap">
+                <!-- GNB -->
+                <nav id="haru_gnb">
+                    <ul>
+                        <li id="haru_LRN" class="dropLRN"><a href="#">외우자</a></li>
+                        <li id="haru_COM" class="dropCOM"><a href="#">커뮤니티</a></li>
+                        <li id="haru_MYP" class="dropMYP"><a href="#">My 페이지</a></li>
+                        <li id="haru_INF" class="dropINF"><a href="#">페이지 정보</a></li>
+                    </ul>
+                </nav>                
+                <!-- //GNB -->
+                <!-- Signinupbutton -->
+                <div id="haru_signup">
+                    <ul>
+                        <li class="sign"><a href="#">로그인</a></li>
+                        <li class="sign"><a href="./html/MEM/signup_terms.html" class="bar">회원가입</a></li>
+                    </ul>
+                </div>
+                <!-- //Signinupbutton -->
+            </div>            
+        </div>           
+    </header>
+    <!-- Dropdown Menu -->
+    <div id="haru_LRN_dropdown" class="dropdown">
+        <ul class="dropLRN">
+            <li><a href="../LRN/indexLRN.html">하루단어</a></li>
+            <li><a href="#">단어검정</a></li>
+            <li><a href="#">단어 List</a></li>
+        </ul>
+        <div class="menu_description">
+            <p class="menu_description_subject">외우자</p>
+            <p class="menu_description_contents">하루, 단어는 외우자의 카테고리 안에서 여러분들에게 스마트한 학습방법을 제공하고자 합니다.</p>
+        </div>
+    </div>
+    <div id="haru_COM_dropdown" class="dropdown">
+        <ul class="dropCOM">
+            <li><a href="../COM/indexCOM.html">공지사항</a></li>
+            <li><a href="#">TIP 게시판</a></li>
+            <li><a href="#">단어통계</a></li>
+        </ul>
+        <div class="menu_description">
+            <p class="menu_description_subject">커뮤니티</p>
+            <p class="menu_description_contents">공지사항 및 회원 간 단어 암기 방법을 공유할 수 있습니다.</p>
+        </div>
+    </div>
+    <div id="haru_MYP_dropdown" class="dropdown">
+        <ul class="dropMYP">
+            <li><a href="../MYP/indexMYP.html" class="wan">오답노트</a></li>
+            <li><a href="#">내 단어장</a></li>
+            <li><a href="./html/MEM/editInfo_pwCheck.html">회원정보변경</a></li>
+        </ul>
+        <div class="menu_description">
+            <p class="menu_description_subject">My 페이지</p>
+            <p class="menu_description_contents">학습하면서 틀린 단어, 어려웠던 단어 등을 조회합니다.</p>
+        </div>
+    </div>
+    <div id="haru_INF_dropdown" class="dropdown">
+        <ul class="dropINF">
+            <li><a href="../INF/indexINF.html" class="aboutus">소개</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <div class="menu_description">
+            <p class="menu_description_subject">페이지 정보</p>
+            <p class="menu_description_contents">제작자 및 관리자를 소개합니다.</p>
+        </div>
+    </div>
+    <!-- //Dropdown Menu -->
+    <!-- Contents Here -->
+    <div id="haru_MYP_header">
+        <h1>My 페이지</h1>
+        <p>학습하면서 틀린 단어, 어려웠던 단어 등을 조회합니다.</p>
+    </div>
+    <div id="haru_contents_wrap">
+        <aside id="haru_aside">
+            <nav id="haru_snb">
+                <ul>
+                    <li><a href="#">My 페이지</a></li>
+                    <li><a href="#" class="snb_link">오답노트</a></li>
+                    <li><a href="#" class="snb_link">내 단어장</a></li>
+                    <li><a href="#" class="snb_link">회원정보변경</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section id="haru_subcontents">
+            <header id="haru_subheader">
+                <div id="haru_subtitle">회원정보변경</div>
+                <div id="haru_cat">
+                    <p>HOME > My 페이지 > 회원정보변경</p>
+                </div>
+            </header>                    
+            <!-- SubContents Here -->
+            <!-- SubContents Here -->
+            <div id="pwCheck">
+                <h3>비밀번호 재확인</h3>
+                <p>안전한 사이트 사용을 위해 비밀번호를 다시 한번 입력해주세요.</p>
+                <div id="password">
+                    <span>비밀번호 <input type="password" placeholder="비밀번호"><span>
+                    
+                </div>
+                <div id="bottomBtn">
+                    <a href="./editInfo.html"><button id="confirmBtn">확인</button></a>
+                </div>
+            </div>
+            <!-- //SubContents Here -->
+        </section>
+    </div>
+    <!-- //Contents Here -->
+    <!-- haru footer -->
+    <footer>
+        <div id="haru_footer_wrap">
+            <!-- FNB -->
+            <nav id="haru_fnb">
+                <ul>
+                    <li><a href="#">페이지소개</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#" class="laws">개인정보처리방침</a></li>
+                    <li><a href="./html/MEM/forgotID_PW.html">ID/PW 찾기</a></li>
+                    <li><a href="#">회원탈퇴</a></li>
+                </ul>
+            </nav>
+            <!-- //FNB -->
+            <div id="haru_contactus">
+                <p class="address">울산광역시 중구 종가로 345(교동) 한국산업인력공단 월드잡플러스 | 1577-9997 | FAX : 052-714-8635 | e-mail : job1@hrdkorea.or.kr</p>
+                <p class="copyright">Copyright 2014 WORLDJOBPLUS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- //haru footer -->
+    
+</body>
+</html>

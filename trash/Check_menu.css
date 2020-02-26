@@ -1,0 +1,31 @@
+
+/* 상위 검색 */
+.check table
+{
+    width: 768px;
+}
+
+/* 상위 검색 모양 */
+.check table td
+{
+    margin: 0;
+    padding: 10px;
+    width: 152px;
+    height: 30px;
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+a
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+input
+{
+    display: none;
+}

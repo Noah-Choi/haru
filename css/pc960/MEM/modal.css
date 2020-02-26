@@ -1,0 +1,124 @@
+ /* input box */
+ .modal_inputBox{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  box-sizing: border-box;
+}
+/* input box error */
+.modal_inputBox + p{
+    margin: 0;
+    margin-bottom: 10px;
+    color:darkred;
+}
+/* input button */
+.modal_confirmBtn{
+    width: 100%;
+    background-color: #512B37;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    /* border-radius: 4px; */
+    font-size: 16px;
+    cursor: pointer;
+}
+/* scroll box for terms and conditions */
+.modal_scroll_box{
+    padding: 15px;
+    height: 100px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    overflow-x: hidden;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+ /* The Modal (background) */
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  padding-top: 5%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  /* border: 1px solid #888; */
+  width: 100%;
+  max-width: 500px;
+  max-height: 700px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* @media only screen and (min-width:541px) and (max-width:767px) {
+  .modal-content {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+} */
+
+
+.modal_checkbox {
+  display: none;
+}
+
+.modal_checkbox + label > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: url('../../../img/unchecked.png') no-repeat;
+  background-size: 100%;
+  margin-right: 10px;
+}
+
+.modal_checkbox:checked + label > span { background-image: url('../../../img/checked.png'); }
+
+@media only screen and (max-width:767px) {
+  .modal{
+    padding-top: 0;
+  }
+  .modal-content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    padding: 20px;
+    max-width: none;
+  }
+}
+
+/* The Close Button */
+.modal_close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal_close:hover,
+.modal_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* modal header */
+#modalHeader{
+  margin-bottom: 15px;
+}
